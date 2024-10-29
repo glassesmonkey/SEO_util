@@ -1,0 +1,9 @@
+@echo off
+echo Cleaning previous builds...
+rmdir /s /q build dist
+echo Installing requirements...
+pip install -r requirements.txt
+echo Building executable...
+pyinstaller --clean game_monitor.spec
+echo Build complete!
+pause

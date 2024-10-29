@@ -1,0 +1,33 @@
+2024-10-29 22:57:12,547 - INFO - Monitoring https://packager.turbowarp.org/ for 1w timeframe
+2024-10-29 22:57:14,021 - INFO - Found 0 results for https://packager.turbowarp.org/
+2024-10-29 22:57:18,429 - INFO - Monitoring https://scratch.mit.edu/ for 1w timeframe
+2024-10-29 22:57:20,248 - INFO - Found 54 results for https://scratch.mit.edu/
+2024-10-29 22:57:24,445 - INFO - Monitoring https://turbowarp.org/ for 1w timeframe
+2024-10-29 22:57:26,311 - INFO - Failed to fetch results for https://turbowarp.org/: Status code 429
+2024-10-29 22:57:29,123 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-10-29 22:57:31,137 - INFO - Found 100 results for https://itch.io/
+2024-10-29 22:57:35,874 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-10-29 22:57:37,912 - INFO - Found 32 results for https://cocrea.world/
+2024-10-29 22:57:42,049 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-10-29 22:57:43,932 - INFO - Found 100 results for https://www.curseforge.com/
+2024-10-29 22:57:48,304 - INFO - Monitoring https://itch.io/games/html5 for 1w timeframe
+2024-10-29 22:57:49,909 - INFO - Failed to fetch results for https://itch.io/games/html5: Status code 429
+2024-10-29 22:57:53,870 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-10-29 22:57:55,515 - INFO - Found 40 results for https://www.kongregate.com/
+2024-10-29 22:57:58,744 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-10-29 22:58:00,184 - INFO - Found 6 results for https://armorgames.com/
+2024-10-29 22:58:04,680 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-10-29 22:58:06,455 - INFO - Failed to fetch results for https://www.addictinggames.com/: Status code 429
+2024-10-29 22:58:09,043 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-10-29 22:58:10,527 - INFO - Found 25 results for https://www.crazygames.com/
+2024-10-29 22:58:15,354 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-10-29 22:58:17,005 - INFO - Found 45 results for https://zh.y8.com/
+2024-10-29 22:58:21,350 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-10-29 22:58:23,391 - INFO - Found 100 results for https://www.miniplay.com/
+2024-10-29 22:58:25,933 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-10-29 22:58:27,395 - INFO - Found 27 results for https://www.fandom.com/
+2024-10-29 22:58:30,868 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-10-29 22:58:33,061 - INFO - Found 100 results for https://www.coolmathgames.com/
+2024-10-29 22:58:37,707 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-10-29 22:58:39,562 - INFO - Failed to fetch results for https://play.dictionary.com/: Status code 429
+2024-10-29 22:58:44,360 - INFO - Results saved to game_monitor_results_20241029_225844.csv
