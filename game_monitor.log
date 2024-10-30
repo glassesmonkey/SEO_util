@@ -42,3 +42,197 @@
 2024-10-29 18:33:21,589 - INFO - Found 30 results for https://cocrea.world/
 2024-10-29 18:33:23,743 - INFO - Monitoring https://www.curseforge.com/ for 24h timeframe
 2024-10-29 18:33:26,577 - INFO - Found 100 results for https://www.curseforge.com/
+2024-10-30 12:53:53,481 - INFO - Monitoring https://packager.turbowarp.org/ for 24h timeframe
+2024-10-30 12:53:55,060 - INFO - Found 0 results for https://packager.turbowarp.org/
+2024-10-30 12:53:57,248 - INFO - Monitoring https://scratch.mit.edu/ for 24h timeframe
+2024-10-30 12:53:58,732 - INFO - Found 0 results for https://scratch.mit.edu/
+2024-10-30 12:56:13,638 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-10-30 12:56:16,215 - INFO - Failed to fetch results for https://itch.io/: Status code 429
+2024-10-30 12:56:19,597 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-10-30 12:56:22,071 - INFO - Found 30 results for https://cocrea.world/
+2024-10-30 12:56:24,708 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-10-30 12:56:26,934 - INFO - Failed to fetch results for https://www.curseforge.com/: Status code 429
+2024-10-30 12:56:30,397 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-10-30 12:56:31,893 - INFO - Found 36 results for https://www.kongregate.com/
+2024-10-30 12:56:36,644 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-10-30 12:56:38,434 - INFO - Found 6 results for https://armorgames.com/
+2024-10-30 12:56:41,001 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-10-30 12:56:43,664 - INFO - Found 2 results for https://www.addictinggames.com/
+2024-10-30 12:56:47,648 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-10-30 12:56:49,174 - INFO - Failed to fetch results for https://www.crazygames.com/: Status code 429
+2024-10-30 12:56:52,220 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-10-30 12:56:54,219 - INFO - Found 35 results for https://zh.y8.com/
+2024-10-30 12:56:56,330 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-10-30 12:56:57,888 - INFO - Failed to fetch results for https://www.miniplay.com/: Status code 429
+2024-10-30 12:57:01,485 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-10-30 12:57:03,572 - INFO - Found 41 results for https://www.fandom.com/
+2024-10-30 12:57:06,270 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-10-30 12:57:09,577 - INFO - Failed to fetch results for https://www.coolmathgames.com/: Status code 429
+2024-10-30 12:57:13,904 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-10-30 12:57:15,568 - INFO - Found 0 results for https://play.dictionary.com/
+2024-10-30 12:57:18,484 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-10-30 12:57:19,840 - INFO - Failed to fetch results for https://gamedistribution.com/: Status code 429
+2024-10-30 12:57:24,554 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-10-30 12:57:25,921 - INFO - Failed to fetch results for https://www.games.dev.env.gamepix.com/: Status code 429
+2024-10-30 12:57:27,936 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-10-30 12:57:29,874 - INFO - Found 24 results for https://gamemonetize.com/
+2024-10-30 12:57:34,790 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-10-30 12:57:36,269 - INFO - Found 0 results for https://funhtml5games.com/
+2024-10-30 12:57:40,708 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-10-30 12:57:42,535 - INFO - Failed to fetch results for https://1000webgames.com/: Status code 429
+2024-10-30 12:57:46,474 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-10-30 12:57:48,649 - INFO - Found 87 results for https://playhop.com/
+2024-10-30 12:57:52,689 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-10-30 12:57:54,221 - INFO - Failed to fetch results for https://poki.com/: Status code 429
+2024-10-30 12:57:56,376 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-10-30 12:57:58,216 - INFO - Found 1 results for https://www.ufreegames.com/
+2024-10-30 12:58:00,705 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-10-30 12:58:02,339 - INFO - Found 51 results for https://www.gamepix.com/
+2024-10-30 12:58:06,438 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-10-30 12:58:09,554 - INFO - Found 100 results for https://gameforge.com/
+2024-10-30 12:58:11,586 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-10-30 12:58:14,303 - INFO - Found 0 results for https://mybestgames.dk/
+2024-10-30 12:58:16,650 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-10-30 12:58:20,535 - INFO - Found 0 results for https://starfish.games/
+2024-10-30 12:58:23,796 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-10-30 12:58:25,643 - INFO - Failed to fetch results for https://peppagame.com/: Status code 429
+2024-10-30 12:58:29,285 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-10-30 12:58:30,785 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-10-30 12:58:34,855 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-10-30 12:58:37,259 - INFO - Failed to fetch results for https://5xlgame.com/: Status code 429
+2024-10-30 12:58:40,443 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-10-30 12:58:41,838 - INFO - Found 0 results for https://4kzgame.com/
+2024-10-30 12:58:45,434 - INFO - Results saved to game_monitor_results_20241030_125845.csv
+2024-10-30 13:03:51,322 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-10-30 13:03:53,705 - INFO - Found 100 results for https://itch.io/
+2024-10-30 13:04:07,043 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-10-30 13:04:08,402 - INFO - Rate limited for https://cocrea.world/, waiting 60 seconds before retry 1/3
+2024-10-30 13:05:09,838 - INFO - Rate limited for https://cocrea.world/, waiting 120 seconds before retry 2/3
+2024-10-30 13:07:11,243 - INFO - Found 0 results for https://cocrea.world/
+2024-10-30 13:07:21,230 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-10-30 13:07:23,142 - INFO - Found 100 results for https://www.curseforge.com/
+2024-10-30 13:07:34,743 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-10-30 13:07:36,006 - INFO - Found 0 results for https://www.kongregate.com/
+2024-10-30 13:07:47,056 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-10-30 13:07:49,412 - INFO - Rate limited for https://armorgames.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:08:51,217 - INFO - Found 0 results for https://armorgames.com/
+2024-10-30 13:09:03,678 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-10-30 13:09:06,882 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-10-30 13:09:18,335 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-10-30 13:09:19,933 - INFO - Found 26 results for https://www.crazygames.com/
+2024-10-30 13:09:32,085 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-10-30 13:09:34,962 - INFO - Found 0 results for https://zh.y8.com/
+2024-10-30 13:09:48,673 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-10-30 13:09:50,724 - INFO - Rate limited for https://www.miniplay.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:10:53,102 - INFO - Found 0 results for https://www.miniplay.com/
+2024-10-30 13:11:01,625 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-10-30 13:11:02,976 - INFO - Rate limited for https://www.fandom.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:12:06,485 - INFO - Found 0 results for https://www.fandom.com/
+2024-10-30 13:12:20,391 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-10-30 13:12:25,436 - INFO - Error monitoring https://www.coolmathgames.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.coolmathgames.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:12:31,563 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-10-30 13:12:32,973 - INFO - Found 0 results for https://play.dictionary.com/
+2024-10-30 13:12:39,610 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-10-30 13:12:42,478 - INFO - Found 0 results for https://gamedistribution.com/
+2024-10-30 13:12:51,315 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-10-30 13:12:53,637 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-10-30 13:13:07,644 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-10-30 13:13:10,705 - INFO - Found 0 results for https://gamemonetize.com/
+2024-10-30 13:13:25,307 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-10-30 13:13:26,698 - INFO - Found 0 results for https://funhtml5games.com/
+2024-10-30 13:13:40,413 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-10-30 13:13:42,813 - INFO - Found 0 results for https://1000webgames.com/
+2024-10-30 13:13:52,632 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-10-30 13:13:57,153 - INFO - Found 0 results for https://playhop.com/
+2024-10-30 13:14:04,127 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-10-30 13:14:08,413 - INFO - Found 0 results for https://poki.com/
+2024-10-30 13:14:18,677 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-10-30 13:14:20,112 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-10-30 13:14:26,180 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-10-30 13:14:28,780 - INFO - Rate limited for https://www.gamepix.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:15:30,295 - INFO - Found 1 results for https://www.gamepix.com/
+2024-10-30 13:15:36,028 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-10-30 13:15:38,835 - INFO - Found 0 results for https://gameforge.com/
+2024-10-30 13:15:48,028 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-10-30 13:15:49,718 - INFO - Found 0 results for https://mybestgames.dk/
+2024-10-30 13:15:59,865 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-10-30 13:16:02,970 - INFO - Rate limited for https://starfish.games/, waiting 60 seconds before retry 1/3
+2024-10-30 13:17:05,663 - INFO - Rate limited for https://starfish.games/, waiting 120 seconds before retry 2/3
+2024-10-30 13:19:09,059 - INFO - Failed to fetch results for https://starfish.games/ after 3 retries
+2024-10-30 13:19:15,488 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-10-30 13:19:16,824 - INFO - Rate limited for https://peppagame.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:20:18,743 - INFO - Found 0 results for https://peppagame.com/
+2024-10-30 13:20:32,980 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-10-30 13:20:34,736 - INFO - Rate limited for https://a01.5xlgame.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:21:42,269 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-10-30 13:21:56,349 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-10-30 13:21:58,156 - INFO - Found 0 results for https://5xlgame.com/
+2024-10-30 13:22:10,482 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-10-30 13:22:12,524 - INFO - Rate limited for https://4kzgame.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:23:15,759 - INFO - Rate limited for https://4kzgame.com/, waiting 120 seconds before retry 2/3
+2024-10-30 13:25:17,683 - INFO - Found 0 results for https://4kzgame.com/
+2024-10-30 13:28:05,858 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-10-30 13:28:08,157 - INFO - Found 0 results for https://itch.io/
+2024-10-30 13:28:18,223 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-10-30 13:28:19,575 - INFO - Found 0 results for https://cocrea.world/
+2024-10-30 13:28:32,775 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-10-30 13:28:36,208 - INFO - Found 0 results for https://www.curseforge.com/
+2024-10-30 13:28:46,159 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-10-30 13:28:48,833 - INFO - Rate limited for https://www.kongregate.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:29:50,579 - INFO - Found 0 results for https://www.kongregate.com/
+2024-10-30 13:30:01,642 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-10-30 13:30:02,957 - INFO - Found 0 results for https://armorgames.com/
+2024-10-30 13:30:09,696 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-10-30 13:30:11,888 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-10-30 13:30:22,660 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-10-30 13:30:24,314 - INFO - Found 0 results for https://www.crazygames.com/
+2024-10-30 13:30:38,450 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-10-30 13:30:40,952 - INFO - Found 0 results for https://zh.y8.com/
+2024-10-30 13:30:50,349 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-10-30 13:30:53,005 - INFO - Found 100 results for https://www.miniplay.com/
+2024-10-30 13:31:00,028 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-10-30 13:31:07,715 - INFO - Found 0 results for https://www.fandom.com/
+2024-10-30 13:31:13,044 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-10-30 13:31:15,518 - INFO - Found 0 results for https://www.coolmathgames.com/
+2024-10-30 13:31:22,914 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-10-30 13:31:24,638 - INFO - Rate limited for https://play.dictionary.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:32:29,663 - INFO - Error monitoring https://play.dictionary.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//play.dictionary.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:32:41,823 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-10-30 13:32:43,714 - INFO - Rate limited for https://gamedistribution.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:33:45,992 - INFO - Rate limited for https://gamedistribution.com/, waiting 120 seconds before retry 2/3
+2024-10-30 13:35:47,623 - INFO - Found 0 results for https://gamedistribution.com/
+2024-10-30 13:35:59,044 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-10-30 13:36:00,908 - INFO - Rate limited for https://www.games.dev.env.gamepix.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:37:05,939 - INFO - Error monitoring https://www.games.dev.env.gamepix.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.games.dev.env.gamepix.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:37:14,373 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-10-30 13:37:19,950 - INFO - Found 0 results for https://gamemonetize.com/
+2024-10-30 13:37:29,513 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-10-30 13:37:31,494 - INFO - Rate limited for https://funhtml5games.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:38:33,594 - INFO - Found 0 results for https://funhtml5games.com/
+2024-10-30 13:38:47,520 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-10-30 13:38:49,437 - INFO - Rate limited for https://1000webgames.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:39:51,018 - INFO - Found 0 results for https://1000webgames.com/
+2024-10-30 13:40:04,483 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-10-30 13:40:06,389 - INFO - Rate limited for https://playhop.com/, waiting 60 seconds before retry 1/3
+2024-10-30 13:41:08,218 - INFO - Found 0 results for https://playhop.com/
+2024-10-30 13:41:14,401 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-10-30 13:41:16,200 - INFO - Found 0 results for https://poki.com/
+2024-10-30 13:41:26,763 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-10-30 13:41:28,644 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-10-30 13:41:40,661 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-10-30 13:41:45,695 - INFO - Error monitoring https://www.gamepix.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.gamepix.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:41:59,939 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-10-30 13:42:04,985 - INFO - Error monitoring https://gameforge.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//gameforge.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:42:13,042 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-10-30 13:42:18,101 - INFO - Error monitoring https://mybestgames.dk/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//mybestgames.dk/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:42:30,436 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-10-30 13:42:35,485 - INFO - Error monitoring https://starfish.games/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//starfish.games/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:42:49,879 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-10-30 13:42:54,912 - INFO - Error monitoring https://peppagame.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//peppagame.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:43:06,048 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-10-30 13:43:11,140 - INFO - Error monitoring https://a01.5xlgame.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//a01.5xlgame.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:43:21,471 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-10-30 13:43:26,534 - INFO - Error monitoring https://5xlgame.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//5xlgame.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:43:33,240 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-10-30 13:43:38,320 - INFO - Error monitoring https://4kzgame.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//4kzgame.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1000)')))
+2024-10-30 13:43:46,903 - INFO - Results saved to D:/outsea/seotool/SEO_util/game_monitor_results_20241030_125845.csv

@@ -425,6 +425,16 @@ class GameSiteMonitor:
             self._load_existing_urls()
             
         self.setup_logging()
+        
+        # 添加常用 User-Agent 列表
+        self.user_agents = [
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/118.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Safari/537.36',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/119.0',
+            'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/16.6 Safari/605.1.15',
+            'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/119.0.0.0 Edge/119.0.0.0'
+        ]
 
     def _load_existing_urls(self):
         """加载现有CSV文件中的URL"""
@@ -537,19 +547,45 @@ class GameSiteMonitor:
         self.log_message(f"Monitoring {site} for {time_range} timeframe")
         
         try:
-            response = requests.get(
-                search_url, 
-                headers=self.headers,
-                proxies=self.proxies,
-                timeout=30
-            )
-            if response.status_code == 200:
-                results = self.extract_search_results(response.text)
-                self.log_message(f"Found {len(results)} results for {site}")
-                return results
-            else:
-                self.log_message(f"Failed to fetch results for {site}: Status code {response.status_code}")
-                return []
+            max_retries = 3
+            retry_delay = 60
+            
+            for attempt in range(max_retries):
+                # 每次请求使用随机的 User-Agent
+                headers = {
+                    'User-Agent': random.choice(self.user_agents),
+                    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+                    'Accept-Language': 'en-US,en;q=0.5',
+                    'Accept-Encoding': 'gzip, deflate, br',
+                    'DNT': '1',
+                    'Connection': 'keep-alive',
+                    'Upgrade-Insecure-Requests': '1'
+                }
+                
+                response = requests.get(
+                    search_url, 
+                    headers=headers,  # 使用新的headers
+                    proxies=self.proxies,
+                    timeout=30
+                )
+                
+                if response.status_code == 200:
+                    results = self.extract_search_results(response.text)
+                    self.log_message(f"Found {len(results)} results for {site}")
+                    return results
+                elif response.status_code == 429:
+                    if attempt < max_retries - 1:
+                        self.log_message(f"Rate limited for {site}, waiting {retry_delay} seconds before retry {attempt + 1}/{max_retries}")
+                        time.sleep(retry_delay)
+                        retry_delay *= 2  # 指数退避
+                    else:
+                        self.log_message(f"Failed to fetch results for {site} after {max_retries} retries")
+                        return []
+                else:
+                    self.log_message(f"Failed to fetch results for {site}: Status code {response.status_code}")
+                    return []
+                    
+            return []
         except Exception as e:
             self.log_message(f"Error monitoring {site}: {str(e)}")
             return []
@@ -572,7 +608,9 @@ class GameSiteMonitor:
                     })
                 all_results.extend(results)
                 
-                time.sleep(random.uniform(2, 5))
+                # 增加随机延迟，避免触发限制
+                delay = random.uniform(5, 15)  # 5-15秒的随机延迟
+                time.sleep(delay)
         
         if all_results:
             df = pd.DataFrame(all_results)
