@@ -3,7 +3,7 @@ from tkinter import ttk, filedialog, messagebox
 import requests
 from bs4 import BeautifulSoup
 import pandas as pd
-from datetime import datetime
+from datetime import datetime, timedelta
 import time
 import re
 import logging
@@ -12,6 +12,9 @@ import random
 from threading import Thread
 import os
 import json
+import schedule
+import threading
+import sys
 
 class Config:
     def __init__(self, config_file="config.json"):
@@ -22,10 +25,14 @@ class Config:
         """加载配置文件"""
         default_config = {
             "last_file_path": "",
+            "last_csv_path": "",
             "proxy_enabled": False,
             "proxy_host": "127.0.0.1",
             "proxy_port": "7890",
-            "time_range": "24h"
+            "time_range": "24h",
+            "scheduler_enabled": False,
+            "schedule_time": "09:00",
+            "use_existing_csv": False
         }
         
         try:
@@ -45,14 +52,48 @@ class Config:
         except Exception as e:
             print(f"Error saving config: {e}")
 
+class ScheduleManager:
+    def __init__(self, callback):
+        self.callback = callback
+        self.running = False
+        self.thread = None
+
+    def start(self, time_str):
+        """启动定时任务"""
+        if self.running:
+            return
+            
+        self.running = True
+        schedule.clear()
+        schedule.every().day.at(time_str).do(self.callback)
+        
+        self.thread = threading.Thread(target=self._run_schedule, daemon=True)
+        self.thread.start()
+
+    def stop(self):
+        """停止定时任务"""
+        self.running = False
+        schedule.clear()
+        if self.thread:
+            self.thread = None
+
+    def _run_schedule(self):
+        """运行定时任务循环"""
+        while self.running:
+            schedule.run_pending()
+            time.sleep(30)  # 每30秒检查一次
+
 class GameMonitorGUI:
     def __init__(self, root):
         self.root = root
         self.root.title("游戏网站监控工具")
-        self.root.geometry("600x700")
+        self.root.geometry("600x800")
         
         # 加载配置
         self.config = Config()
+        
+        # 初始化定时管理器
+        self.schedule_manager = ScheduleManager(self.scheduled_monitoring)
         
         # 设置样式
         self.setup_styles()
@@ -94,9 +135,26 @@ class GameMonitorGUI:
         file_frame = ttk.LabelFrame(main_frame, text="文件选择", padding=5)
         file_frame.pack(fill=tk.X, pady=5)
 
+        # 网站列表文件选择
+        site_file_frame = ttk.Frame(file_frame)
+        site_file_frame.pack(fill=tk.X, pady=2)
+        ttk.Label(site_file_frame, text="网站列表文件:").pack(side=tk.LEFT)
         self.file_path = tk.StringVar()
-        ttk.Entry(file_frame, textvariable=self.file_path, width=50).pack(side=tk.LEFT, padx=5)
-        ttk.Button(file_frame, text="浏览", command=self.browse_file).pack(side=tk.LEFT, padx=5)
+        ttk.Entry(site_file_frame, textvariable=self.file_path, width=40).pack(side=tk.LEFT, padx=5)
+        ttk.Button(site_file_frame, text="浏览", command=self.browse_site_file).pack(side=tk.LEFT, padx=5)
+
+        # CSV文件选择
+        csv_file_frame = ttk.Frame(file_frame)
+        csv_file_frame.pack(fill=tk.X, pady=2)
+        self.use_existing_csv = tk.BooleanVar()
+        ttk.Checkbutton(csv_file_frame, text="使用现有CSV文件", 
+                       variable=self.use_existing_csv,
+                       command=self.toggle_csv_fields).pack(side=tk.LEFT)
+        self.csv_path = tk.StringVar()
+        self.csv_entry = ttk.Entry(csv_file_frame, textvariable=self.csv_path, width=40)
+        self.csv_entry.pack(side=tk.LEFT, padx=5)
+        self.csv_button = ttk.Button(csv_file_frame, text="浏览", command=self.browse_csv_file)
+        self.csv_button.pack(side=tk.LEFT, padx=5)
 
         # 代理设置部分
         proxy_frame = ttk.LabelFrame(main_frame, text="代理设置", padding=5)
@@ -130,6 +188,22 @@ class GameMonitorGUI:
         self.proxy_port_entry = ttk.Entry(proxy_port_frame, textvariable=self.proxy_port, width=10)
         self.proxy_port_entry.pack(side=tk.LEFT, padx=5)
 
+        # 定时任务设置
+        schedule_frame = ttk.LabelFrame(main_frame, text="定时任务设置", padding=5)
+        schedule_frame.pack(fill=tk.X, pady=5)
+        
+        self.scheduler_enabled = tk.BooleanVar()
+        ttk.Checkbutton(schedule_frame, text="启用定时任务", 
+                       variable=self.scheduler_enabled,
+                       command=self.toggle_schedule_fields).pack(side=tk.LEFT)
+        
+        self.schedule_time = tk.StringVar(value="09:00")
+        self.schedule_time_entry = ttk.Entry(schedule_frame, 
+                                           textvariable=self.schedule_time, 
+                                           width=10)
+        self.schedule_time_entry.pack(side=tk.LEFT, padx=5)
+        ttk.Label(schedule_frame, text="（格式: HH:MM）").pack(side=tk.LEFT)
+
         # 时间范围选择
         time_frame = ttk.LabelFrame(main_frame, text="搜索时间范围", padding=5)
         time_frame.pack(fill=tk.X, pady=5)
@@ -159,26 +233,39 @@ class GameMonitorGUI:
         
         self.result_text.pack(side=tk.LEFT, fill=tk.BOTH, expand=True)
         scrollbar.pack(side=tk.RIGHT, fill=tk.Y)
-
     def load_saved_config(self):
-        """加载保存的配置"""
+       
         self.file_path.set(self.config.config["last_file_path"])
+        self.csv_path.set(self.config.config["last_csv_path"])
+        self.use_existing_csv.set(self.config.config["use_existing_csv"])
         self.proxy_enabled.set(self.config.config["proxy_enabled"])
         self.proxy_host.set(self.config.config["proxy_host"])
         self.proxy_port.set(self.config.config["proxy_port"])
         self.time_range.set(self.config.config["time_range"])
+        self.scheduler_enabled.set(self.config.config["scheduler_enabled"])
+        self.schedule_time.set(self.config.config["schedule_time"])
         
-        # 更新代理字段状态
+        # 更新各个字段状态
         self.toggle_proxy_fields()
+        self.toggle_csv_fields()
+        self.toggle_schedule_fields()
+
+        # 如果定时任务被启用，启动定时任务
+        if self.scheduler_enabled.get():
+            self.schedule_manager.start(self.schedule_time.get())
 
     def save_current_config(self):
         """保存当前配置"""
         self.config.config.update({
             "last_file_path": self.file_path.get(),
+            "last_csv_path": self.csv_path.get(),
+            "use_existing_csv": self.use_existing_csv.get(),
             "proxy_enabled": self.proxy_enabled.get(),
             "proxy_host": self.proxy_host.get(),
             "proxy_port": self.proxy_port.get(),
-            "time_range": self.time_range.get()
+            "time_range": self.time_range.get(),
+            "scheduler_enabled": self.scheduler_enabled.get(),
+            "schedule_time": self.schedule_time.get()
         })
         self.config.save_config()
 
@@ -188,8 +275,24 @@ class GameMonitorGUI:
         self.proxy_host_entry.configure(state=state)
         self.proxy_port_entry.configure(state=state)
 
-    def browse_file(self):
-        """浏览文件"""
+    def toggle_csv_fields(self):
+        """切换CSV文件字段的启用状态"""
+        state = 'normal' if self.use_existing_csv.get() else 'disabled'
+        self.csv_entry.configure(state=state)
+        self.csv_button.configure(state=state)
+
+    def toggle_schedule_fields(self):
+        """切换定时任务字段的启用状态"""
+        state = 'normal' if self.scheduler_enabled.get() else 'disabled'
+        self.schedule_time_entry.configure(state=state)
+        
+        if self.scheduler_enabled.get():
+            self.schedule_manager.start(self.schedule_time.get())
+        else:
+            self.schedule_manager.stop()
+
+    def browse_site_file(self):
+        """浏览网站列表文件"""
         filename = filedialog.askopenfilename(
             title="选择网站列表文件",
             filetypes=[("Text files", "*.txt"), ("All files", "*.*")],
@@ -199,9 +302,21 @@ class GameMonitorGUI:
             self.file_path.set(filename)
             self.save_current_config()
 
+    def browse_csv_file(self):
+        """浏览CSV文件"""
+        filename = filedialog.askopenfilename(
+            title="选择CSV文件",
+            filetypes=[("CSV files", "*.csv"), ("All files", "*.*")],
+            initialdir=os.path.dirname(self.csv_path.get()) if self.csv_path.get() else os.getcwd()
+        )
+        if filename:
+            self.csv_path.set(filename)
+            self.save_current_config()
+
     def on_closing(self):
         """窗口关闭时的处理"""
         self.save_current_config()
+        self.schedule_manager.stop()
         self.root.destroy()
 
     def update_progress(self, message):
@@ -209,6 +324,14 @@ class GameMonitorGUI:
         self.progress_var.set(message)
         self.result_text.insert(tk.END, message + "\n")
         self.result_text.see(tk.END)
+
+    def scheduled_monitoring(self):
+        """定时任务执行的监控函数"""
+        self.root.after(0, lambda: self.start_button.configure(state='disabled'))
+        self.root.after(0, lambda: self.result_text.delete(1.0, tk.END))
+        self.root.after(0, lambda: self.update_progress("开始执行定时监控任务..."))
+        
+        Thread(target=self.run_monitor, daemon=True).start()
 
     def start_monitoring(self):
         """开始监控"""
@@ -218,6 +341,10 @@ class GameMonitorGUI:
 
         if not os.path.exists(self.file_path.get()):
             messagebox.showerror("错误", "所选文件不存在！")
+            return
+
+        if self.use_existing_csv.get() and not self.csv_path.get():
+            messagebox.showerror("错误", "请选择CSV文件！")
             return
 
         # 保存当前配置
@@ -242,7 +369,8 @@ class GameMonitorGUI:
                 sites_file=self.file_path.get(),
                 proxy_host=proxy_host,
                 proxy_port=proxy_port,
-                logger_callback=self.update_progress
+                logger_callback=self.update_progress,
+                existing_csv=self.csv_path.get() if self.use_existing_csv.get() else None
             )
             
             results_df = monitor.monitor_all_sites([self.time_range.get()])
@@ -266,13 +394,14 @@ class GameMonitorGUI:
             self.root.after(0, lambda: self.start_button.configure(state='normal'))
 
 class GameSiteMonitor:
-    def __init__(self, sites_file="game_sites.txt", proxy_host=None, proxy_port=None, logger_callback=None):
+    def __init__(self, sites_file="game_sites.txt", proxy_host=None, proxy_port=None, logger_callback=None, existing_csv=None):
         """
         初始化监控器
-        :param sites_file: 包含游戏网站列表的文本文件
-        :param proxy_host: 代理主机地址
+        :param sites_file: 网站列表文件
+        :param proxy_host: 代理主机
         :param proxy_port: 代理端口
         :param logger_callback: 日志回调函数
+        :param existing_csv: 现有的CSV文件路径
         """
         self.sites = self._load_sites(sites_file)
         self.headers = {
@@ -289,7 +418,22 @@ class GameSiteMonitor:
         
         self.logger_callback = logger_callback
         self.last_output_file = None
+        self.existing_csv = existing_csv
+        self.existing_urls = set()
+        
+        if existing_csv and os.path.exists(existing_csv):
+            self._load_existing_urls()
+            
         self.setup_logging()
+
+    def _load_existing_urls(self):
+        """加载现有CSV文件中的URL"""
+        try:
+            df = pd.read_csv(self.existing_csv, encoding='utf-8-sig')
+            if 'url' in df.columns:
+                self.existing_urls = set(df['url'].tolist())
+        except Exception as e:
+            self.log_message(f"Error loading existing CSV: {str(e)}")
 
     def setup_logging(self):
         """设置日志"""
@@ -320,17 +464,12 @@ class GameSiteMonitor:
         self.logger.info(message)
 
     def build_google_search_url(self, site, time_range):
-        """
-        构建Google搜索URL
-        :param site: 网站域名
-        :param time_range: 时间范围('24h' or '1w')
-        :return: 编码后的搜索URL
-        """
+        """构建Google搜索URL"""
         base_url = "https://www.google.com/search"
         if time_range == '24h':
-            tbs = 'qdr:d'  # 最近24小时
+            tbs = 'qdr:d'
         elif time_range == '1w':
-            tbs = 'qdr:w'  # 最近1周
+            tbs = 'qdr:w'
         else:
             raise ValueError("Invalid time range")
         
@@ -338,22 +477,17 @@ class GameSiteMonitor:
         params = {
             'q': query,
             'tbs': tbs,
-            'num': 100  # 每页结果数
+            'num': 100
         }
         
         query_string = '&'.join([f'{k}={quote(str(v))}' for k, v in params.items()])
         return f"{base_url}?{query_string}"
 
     def extract_search_results(self, html_content):
-        """
-        从Google搜索结果页面提取信息
-        :param html_content: 页面HTML内容
-        :return: 提取的URL和标题列表
-        """
+        """从Google搜索结果页面提取信息"""
         soup = BeautifulSoup(html_content, 'html.parser')
         results = []
         
-        # 查找搜索结果
         for result in soup.select('div.g'):
             try:
                 title_elem = result.select_one('h3')
@@ -363,7 +497,10 @@ class GameSiteMonitor:
                     title = title_elem.get_text()
                     url = url_elem['href']
                     
-                    # 提取可能的游戏名称
+                    # URL去重检查
+                    if url in self.existing_urls:
+                        continue
+                        
                     game_name = self.extract_game_name(title)
                     
                     if game_name:
@@ -378,16 +515,12 @@ class GameSiteMonitor:
         return results
 
     def extract_game_name(self, title):
-        """
-        从标题中提取可能的游戏名称
-        :param title: 页面标题
-        :return: 提取的游戏名称或None
-        """
+        """从标题中提取游戏名称"""
         patterns = [
-            r'《(.+?)》',  # 中文书名号
-            r'"(.+?)"',    # 英文引号
-            r'【(.+?)】',  # 中文方括号
-            r'\[(.+?)\]'   # 英文方括号
+            r'《(.+?)》',
+            r'"(.+?)"',
+            r'【(.+?)】',
+            r'\[(.+?)\]'
         ]
         
         for pattern in patterns:
@@ -395,17 +528,11 @@ class GameSiteMonitor:
             if match:
                 return match.group(1)
         
-        # 如果没有特定标记，返回清理后的标题
         cleaned_title = re.sub(r'(攻略|评测|资讯|下载|官网|专区|合集|手游|网游|页游|主机游戏|单机游戏)', '', title)
         return cleaned_title.strip()
 
     def monitor_site(self, site, time_range):
-        """
-        监控单个网站
-        :param site: 网站域名
-        :param time_range: 时间范围
-        :return: 搜索结果列表
-        """
+        """监控单个网站"""
         search_url = self.build_google_search_url(site, time_range)
         self.log_message(f"Monitoring {site} for {time_range} timeframe")
         
@@ -414,7 +541,7 @@ class GameSiteMonitor:
                 search_url, 
                 headers=self.headers,
                 proxies=self.proxies,
-                timeout=30  # 添加超时设置
+                timeout=30
             )
             if response.status_code == 200:
                 results = self.extract_search_results(response.text)
@@ -428,11 +555,7 @@ class GameSiteMonitor:
             return []
 
     def monitor_all_sites(self, time_ranges=None):
-        """
-        监控所有网站
-        :param time_ranges: 时间范围列表
-        :return: 包含所有结果的DataFrame
-        """
+        """监控所有网站"""
         if time_ranges is None:
             time_ranges = ['24h', '1w']
             
@@ -449,19 +572,26 @@ class GameSiteMonitor:
                     })
                 all_results.extend(results)
                 
-                # 随机延时，避免请求过快
                 time.sleep(random.uniform(2, 5))
         
-        # 转换为DataFrame并保存
         if all_results:
             df = pd.DataFrame(all_results)
-            self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+            
+            # 如果使用现有CSV文件，则追加到现有文件
+            if self.existing_csv and os.path.exists(self.existing_csv):
+                existing_df = pd.read_csv(self.existing_csv, encoding='utf-8-sig')
+                df = pd.concat([existing_df, df], ignore_index=True)
+                self.last_output_file = self.existing_csv
+            else:
+                self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+            
             df.to_csv(self.last_output_file, index=False, encoding='utf-8-sig')
             self.log_message(f"Results saved to {self.last_output_file}")
             return df
         else:
             self.log_message("No results found")
             return pd.DataFrame()
+
 def main():
     root = tk.Tk()
     app = GameMonitorGUI(root)
