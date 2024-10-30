@@ -1,0 +1,17 @@
+# Pyenv 相关文件
+.python-version
+.pyenv/
+*/.pyenv/
+.env
+venv/
+env/
+ENV/
+
+# Python 编译文件
+__pycache__/
+*.py[cod]
+*$py.class
+
+# 系统文件
+.DS_Store
+Thumbs.db 
