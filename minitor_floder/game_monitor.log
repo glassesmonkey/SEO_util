@@ -31,3 +31,77 @@
 2024-10-29 22:58:37,707 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
 2024-10-29 22:58:39,562 - INFO - Failed to fetch results for https://play.dictionary.com/: Status code 429
 2024-10-29 22:58:44,360 - INFO - Results saved to game_monitor_results_20241029_225844.csv
+2024-10-31 21:55:35,212 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-10-31 21:55:36,768 - INFO - Found 0 results for https://itch.io/
+2024-10-31 21:55:44,363 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-10-31 21:55:45,889 - INFO - Found 11 results for https://cocrea.world/
+2024-10-31 21:55:58,581 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-10-31 21:56:00,228 - INFO - Found 82 results for https://www.curseforge.com/
+2024-10-31 21:56:08,877 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-10-31 21:56:10,137 - INFO - Found 0 results for https://www.kongregate.com/
+2024-10-31 21:56:16,640 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-10-31 21:56:18,826 - INFO - Found 0 results for https://armorgames.com/
+2024-10-31 21:56:30,532 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-10-31 21:56:32,174 - INFO - Rate limited for https://www.addictinggames.com/, waiting 60 seconds before retry 1/3
+2024-10-31 21:57:33,662 - INFO - Rate limited for https://www.addictinggames.com/, waiting 120 seconds before retry 2/3
+2024-10-31 21:59:34,896 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-10-31 21:59:47,772 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-10-31 21:59:48,994 - INFO - Found 0 results for https://www.crazygames.com/
+2024-10-31 21:59:56,849 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-10-31 21:59:58,514 - INFO - Rate limited for https://zh.y8.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:00:59,731 - INFO - Found 0 results for https://zh.y8.com/
+2024-10-31 22:01:05,107 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-10-31 22:01:06,747 - INFO - Rate limited for https://www.miniplay.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:02:08,184 - INFO - Rate limited for https://www.miniplay.com/, waiting 120 seconds before retry 2/3
+2024-10-31 22:04:09,765 - INFO - Failed to fetch results for https://www.miniplay.com/ after 3 retries
+2024-10-31 22:04:18,085 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-10-31 22:04:20,070 - INFO - Rate limited for https://www.fandom.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:05:21,376 - INFO - Found 22 results for https://www.fandom.com/
+2024-10-31 22:05:33,348 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-10-31 22:05:34,763 - INFO - Found 0 results for https://www.coolmathgames.com/
+2024-10-31 22:05:41,874 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-10-31 22:05:43,150 - INFO - Found 0 results for https://play.dictionary.com/
+2024-10-31 22:05:50,382 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-10-31 22:05:51,789 - INFO - Rate limited for https://gamedistribution.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:06:52,985 - INFO - Found 0 results for https://gamedistribution.com/
+2024-10-31 22:06:58,757 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-10-31 22:07:00,356 - INFO - Rate limited for https://www.games.dev.env.gamepix.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:08:01,612 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-10-31 22:08:06,731 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-10-31 22:08:08,089 - INFO - Found 0 results for https://gamemonetize.com/
+2024-10-31 22:08:22,310 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-10-31 22:08:23,513 - INFO - Found 0 results for https://funhtml5games.com/
+2024-10-31 22:08:35,221 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-10-31 22:08:36,922 - INFO - Rate limited for https://1000webgames.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:09:38,066 - INFO - Found 0 results for https://1000webgames.com/
+2024-10-31 22:09:43,862 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-10-31 22:09:46,166 - INFO - Found 0 results for https://playhop.com/
+2024-10-31 22:09:57,199 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-10-31 22:09:58,678 - INFO - Found 0 results for https://poki.com/
+2024-10-31 22:10:07,163 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-10-31 22:10:08,748 - INFO - Rate limited for https://www.ufreegames.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:11:10,421 - INFO - Rate limited for https://www.ufreegames.com/, waiting 120 seconds before retry 2/3
+2024-10-31 22:13:12,124 - INFO - Failed to fetch results for https://www.ufreegames.com/ after 3 retries
+2024-10-31 22:13:17,376 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-10-31 22:13:18,832 - INFO - Rate limited for https://www.gamepix.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:14:20,360 - INFO - Rate limited for https://www.gamepix.com/, waiting 120 seconds before retry 2/3
+2024-10-31 22:16:21,650 - INFO - Found 0 results for https://www.gamepix.com/
+2024-10-31 22:16:35,362 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-10-31 22:16:36,800 - INFO - Rate limited for https://gameforge.com/, waiting 60 seconds before retry 1/3
+2024-10-31 22:17:38,230 - INFO - Rate limited for https://gameforge.com/, waiting 120 seconds before retry 2/3
+2024-10-31 22:19:39,713 - INFO - Failed to fetch results for https://gameforge.com/ after 3 retries
+2024-10-31 22:19:49,789 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-10-31 22:19:51,021 - INFO - Found 0 results for https://mybestgames.dk/
+2024-10-31 22:20:01,726 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-10-31 22:20:03,015 - INFO - Found 0 results for https://starfish.games/
+2024-10-31 22:20:11,679 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-10-31 22:20:12,892 - INFO - Found 0 results for https://peppagame.com/
+2024-10-31 22:20:18,589 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-10-31 22:20:19,860 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-10-31 22:20:33,979 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-10-31 22:20:35,270 - INFO - Found 0 results for https://5xlgame.com/
+2024-10-31 22:20:41,620 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-10-31 22:20:42,896 - INFO - Found 0 results for https://4kzgame.com/
+2024-10-31 22:20:55,911 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-10-31 22:20:57,208 - INFO - Found 0 results for https://www.friv.com/
+2024-10-31 22:21:08,724 - INFO - Results saved to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_225844.csv

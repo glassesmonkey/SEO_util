@@ -4,7 +4,7 @@
 */.pyenv/
 .env
 venv/
-env/
+.venv/
 ENV/
 
 # Python 编译文件
