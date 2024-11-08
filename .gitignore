@@ -1,11 +1,16 @@
+# Python virtual environments
+.venv/
+.venv
+venv/
+venv
+.env
+env/
+ENV/
+
 # Pyenv 相关文件
 .python-version
 .pyenv/
 */.pyenv/
-.env
-venv/
-env/
-ENV/
 
 # Python 编译文件
 __pycache__/
@@ -15,3 +20,7 @@ __pycache__/
 # 系统文件
 .DS_Store
 Thumbs.db 
+
+# CSV 文件
+*.csv
+**/*.csv

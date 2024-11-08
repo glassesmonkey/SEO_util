@@ -400,9 +400,12 @@ class GameSiteMonitor:
         :param sites_file: 网站列表文件
         :param proxy_host: 代理主机
         :param proxy_port: 代理端口
-        :param logger_callback: 日志回调函数
+        :param logger_callback: 日志回调���数
         :param existing_csv: 现有的CSV文件路径
         """
+        # 首先设置logger
+        self.setup_logging()
+        
         self.sites = self._load_sites(sites_file)
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
@@ -423,8 +426,6 @@ class GameSiteMonitor:
         
         if existing_csv and os.path.exists(existing_csv):
             self._load_existing_urls()
-            
-        self.setup_logging()
 
     def _load_existing_urls(self):
         """加载现有CSV文件中的URL"""
