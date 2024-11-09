@@ -11,7 +11,11 @@ ENV/
 .python-version
 .pyenv/
 */.pyenv/
-
+.env
+venv/
+env/
+ENV/
+*.log
 # Python 编译文件
 __pycache__/
 *.py[cod]

@@ -1,0 +1,11 @@
+{
+    "last_file_path": "D:/outsea/seotool/SEO_util/game_sites.txt",
+    "last_csv_path": "D:/outsea/seotool/SEO_util/game_monitor_results_20241030_125845.csv",
+    "proxy_enabled": true,
+    "proxy_host": "127.0.0.1",
+    "proxy_port": "7890",
+    "time_range": "1w",
+    "scheduler_enabled": true,
+    "schedule_time": "09:00",
+    "use_existing_csv": true
+}

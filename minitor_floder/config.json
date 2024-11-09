@@ -1,6 +1,10 @@
 {
     "last_file_path": "E:/MakeDollor/seo-util/SEO_util/game_sites.txt",
+<<<<<<< HEAD
     "last_csv_path": "E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv",
+=======
+    "last_csv_path": "E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_225844.csv",
+>>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
     "proxy_enabled": true,
     "proxy_host": "127.0.0.1",
     "proxy_port": "7890",
