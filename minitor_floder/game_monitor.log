@@ -31,3 +31,113 @@
 2024-10-29 22:58:37,707 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
 2024-10-29 22:58:39,562 - INFO - Failed to fetch results for https://play.dictionary.com/: Status code 429
 2024-10-29 22:58:44,360 - INFO - Results saved to game_monitor_results_20241029_225844.csv
+2024-11-09 01:19:03,702 - INFO - Error loading existing CSV: 'utf-8' codec can't decode byte 0xd9 in position 2396: invalid continuation byte
+2024-11-09 01:19:03,704 - INFO - Monitoring https://packager.turbowarp.org/ for 1w timeframe
+2024-11-09 01:19:08,563 - INFO - Found 0 results for https://packager.turbowarp.org/
+2024-11-09 01:19:12,394 - INFO - Monitoring https://scratch.mit.edu/ for 1w timeframe
+2024-11-09 01:20:18,182 - INFO - Successfully loaded CSV with encoding: gbk
+2024-11-09 01:20:18,190 - INFO - Monitoring https://packager.turbowarp.org/ for 1w timeframe
+2024-11-09 01:20:20,249 - INFO - Found 0 results for https://packager.turbowarp.org/
+2024-11-09 01:20:22,693 - INFO - Monitoring https://scratch.mit.edu/ for 1w timeframe
+2024-11-09 01:20:25,952 - INFO - Found 17 results for https://scratch.mit.edu/
+2024-11-09 01:20:28,443 - INFO - Monitoring https://turbowarp.org/ for 1w timeframe
+2024-11-09 01:20:34,160 - INFO - Found 45 results for https://turbowarp.org/
+2024-11-09 01:20:36,473 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-09 01:20:39,139 - INFO - Found 70 results for https://itch.io/
+2024-11-09 01:20:43,309 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-09 01:20:46,169 - INFO - Failed to fetch results for https://cocrea.world/: Status code 429
+2024-11-09 01:20:50,816 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-09 01:20:58,163 - INFO - Failed to fetch results for https://www.curseforge.com/: Status code 429
+2024-11-09 01:21:00,963 - INFO - Monitoring https://itch.io/games/html5 for 1w timeframe
+2024-11-09 01:21:05,178 - INFO - Found 1 results for https://itch.io/games/html5
+2024-11-09 01:21:09,511 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-09 01:21:12,214 - INFO - Failed to fetch results for https://www.kongregate.com/: Status code 429
+2024-11-09 01:21:15,706 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-09 01:21:18,888 - INFO - Found 0 results for https://armorgames.com/
+2024-11-09 01:21:21,095 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-09 01:21:24,162 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-09 01:21:28,874 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-09 01:21:33,113 - INFO - Found 9 results for https://www.crazygames.com/
+2024-11-09 01:21:36,931 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-11-09 01:21:44,093 - INFO - Found 31 results for https://zh.y8.com/
+2024-11-09 01:21:47,946 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-09 01:21:52,008 - INFO - Found 18 results for https://www.miniplay.com/
+2024-11-09 01:21:55,381 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-09 01:22:11,351 - INFO - Error monitoring https://www.fandom.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.fandom.com/&tbs=qdr%3Aw&num=100 (Caused by ProxyError('Unable to connect to proxy', RemoteDisconnected('Remote end closed connection without response')))
+2024-11-09 01:22:14,246 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-09 01:22:16,824 - INFO - Found 44 results for https://www.coolmathgames.com/
+2024-11-09 01:22:19,969 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-09 01:22:23,310 - INFO - Failed to fetch results for https://play.dictionary.com/: Status code 429
+2024-11-09 01:22:26,971 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-09 01:22:33,865 - INFO - Failed to fetch results for https://peppagame.com/: Status code 429
+2024-11-09 09:00:17,112 - INFO - Successfully loaded CSV with encoding: gbk
+2024-11-09 09:00:17,115 - INFO - Monitoring https://packager.turbowarp.org/ for 1w timeframe
+2024-11-09 09:00:18,245 - INFO - Found 0 results for https://packager.turbowarp.org/
+2024-11-09 09:00:22,067 - INFO - Monitoring https://scratch.mit.edu/ for 1w timeframe
+2024-11-09 09:00:23,538 - INFO - Found 16 results for https://scratch.mit.edu/
+2024-11-09 09:00:26,661 - INFO - Monitoring https://turbowarp.org/ for 1w timeframe
+2024-11-09 09:00:28,200 - INFO - Found 48 results for https://turbowarp.org/
+2024-11-09 09:00:30,700 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-09 09:00:32,724 - INFO - Found 70 results for https://itch.io/
+2024-11-09 09:00:35,662 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-09 09:00:37,586 - INFO - Failed to fetch results for https://cocrea.world/: Status code 429
+2024-11-09 09:00:39,933 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-09 09:00:45,072 - INFO - Found 92 results for https://www.curseforge.com/
+2024-11-09 09:00:49,818 - INFO - Monitoring https://itch.io/games/html5 for 1w timeframe
+2024-11-09 09:00:51,745 - INFO - Failed to fetch results for https://itch.io/games/html5: Status code 429
+2024-11-09 09:00:55,567 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-09 09:00:57,125 - INFO - Found 34 results for https://www.kongregate.com/
+2024-11-09 09:00:59,631 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-09 09:01:01,160 - INFO - Found 9 results for https://armorgames.com/
+2024-11-09 09:01:04,481 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-09 09:01:09,180 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-09 09:01:12,319 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-09 09:01:13,971 - INFO - Failed to fetch results for https://www.crazygames.com/: Status code 429
+2024-11-09 09:01:16,126 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-11-09 09:01:17,539 - INFO - Found 24 results for https://zh.y8.com/
+2024-11-09 09:01:20,961 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-09 09:01:22,931 - INFO - Found 18 results for https://www.miniplay.com/
+2024-11-09 09:01:27,417 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-09 09:01:28,802 - INFO - Found 2 results for https://www.fandom.com/
+2024-11-09 09:01:32,138 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-09 09:01:34,013 - INFO - Found 50 results for https://www.coolmathgames.com/
+2024-11-09 09:01:36,599 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-09 09:01:41,631 - INFO - Error monitoring https://play.dictionary.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//play.dictionary.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-09 09:01:46,209 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-09 09:01:47,728 - INFO - Found 0 results for https://peppagame.com/
+2024-11-09 11:34:15,864 - INFO - Successfully loaded CSV with encoding: gbk
+2024-11-09 11:34:15,865 - INFO - Monitoring https://packager.turbowarp.org/ for 1w timeframe
+2024-11-09 11:34:17,618 - INFO - Failed to fetch results for https://packager.turbowarp.org/: Status code 429
+2024-11-09 11:34:21,791 - INFO - Monitoring https://scratch.mit.edu/ for 1w timeframe
+2024-11-09 11:34:23,322 - INFO - Found 17 results for https://scratch.mit.edu/
+2024-11-09 11:34:26,294 - INFO - Monitoring https://turbowarp.org/ for 1w timeframe
+2024-11-09 11:34:27,877 - INFO - Failed to fetch results for https://turbowarp.org/: Status code 429
+2024-11-09 11:34:30,041 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-09 11:34:31,809 - INFO - Failed to fetch results for https://itch.io/: Status code 429
+2024-11-09 11:34:35,604 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-09 11:34:37,558 - INFO - Failed to fetch results for https://cocrea.world/: Status code 429
+2024-11-09 11:34:40,725 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-09 11:34:42,526 - INFO - Found 92 results for https://www.curseforge.com/
+2024-11-09 11:34:45,032 - INFO - Monitoring https://itch.io/games/html5 for 1w timeframe
+2024-11-09 11:34:46,829 - INFO - Failed to fetch results for https://itch.io/games/html5: Status code 429
+2024-11-09 11:34:50,870 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-09 11:34:52,706 - INFO - Failed to fetch results for https://www.kongregate.com/: Status code 429
+2024-11-09 11:34:57,373 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-09 11:34:58,991 - INFO - Failed to fetch results for https://armorgames.com/: Status code 429
+2024-11-09 11:35:01,743 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-09 11:35:03,060 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-09 11:35:06,964 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-09 11:35:08,582 - INFO - Failed to fetch results for https://www.crazygames.com/: Status code 429
+2024-11-09 11:35:12,570 - INFO - Monitoring https://zh.y8.com/ for 1w timeframe
+2024-11-09 11:35:13,935 - INFO - Found 25 results for https://zh.y8.com/
+2024-11-09 11:35:17,789 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-09 11:35:19,593 - INFO - Found 20 results for https://www.miniplay.com/
+2024-11-09 11:35:24,182 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-09 11:35:25,937 - INFO - Failed to fetch results for https://www.fandom.com/: Status code 429
+2024-11-09 11:35:28,762 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-09 11:35:30,493 - INFO - Failed to fetch results for https://www.coolmathgames.com/: Status code 429
+2024-11-09 11:35:34,467 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-09 11:35:37,473 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-09 11:35:41,781 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-09 11:35:43,484 - INFO - Failed to fetch results for https://peppagame.com/: Status code 429
+2024-11-09 11:35:46,955 - INFO - Results saved to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv

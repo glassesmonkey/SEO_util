@@ -400,7 +400,7 @@ class GameSiteMonitor:
         :param sites_file: 网站列表文件
         :param proxy_host: 代理主机
         :param proxy_port: 代理端口
-        :param logger_callback: 日志回调���数
+        :param logger_callback: 日志回调数
         :param existing_csv: 现有的CSV文件路径
         """
         # 首先设置logger
@@ -429,12 +429,19 @@ class GameSiteMonitor:
 
     def _load_existing_urls(self):
         """加载现有CSV文件中的URL"""
-        try:
-            df = pd.read_csv(self.existing_csv, encoding='utf-8-sig')
-            if 'url' in df.columns:
-                self.existing_urls = set(df['url'].tolist())
-        except Exception as e:
-            self.log_message(f"Error loading existing CSV: {str(e)}")
+        encodings = ['utf-8-sig', 'utf-8', 'gbk', 'gb2312', 'gb18030']
+        
+        for encoding in encodings:
+            try:
+                df = pd.read_csv(self.existing_csv, encoding=encoding)
+                if 'url' in df.columns:
+                    self.existing_urls = set(df['url'].tolist())
+                    self.log_message(f"Successfully loaded CSV with encoding: {encoding}")
+                    return
+            except Exception as e:
+                continue
+        
+        self.log_message("Failed to load CSV with any known encoding")
 
     def setup_logging(self):
         """设置日志"""
@@ -578,17 +585,35 @@ class GameSiteMonitor:
         if all_results:
             df = pd.DataFrame(all_results)
             
-            # 如果使用现有CSV文件，则追加到现有文件
-            if self.existing_csv and os.path.exists(self.existing_csv):
-                existing_df = pd.read_csv(self.existing_csv, encoding='utf-8-sig')
-                df = pd.concat([existing_df, df], ignore_index=True)
-                self.last_output_file = self.existing_csv
-            else:
-                self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
-            
-            df.to_csv(self.last_output_file, index=False, encoding='utf-8-sig')
-            self.log_message(f"Results saved to {self.last_output_file}")
-            return df
+            try:
+                # 如果使用现有CSV文件，则追加到现有文件
+                if self.existing_csv and os.path.exists(self.existing_csv):
+                    try:
+                        # 尝试用相同的编码读取现有文件
+                        existing_df = pd.read_csv(self.existing_csv, encoding='gbk')
+                        df = pd.concat([existing_df, df], ignore_index=True)
+                        self.last_output_file = self.existing_csv
+                    except Exception as e:
+                        self.log_message(f"Error reading existing CSV, creating new file: {str(e)}")
+                        self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                else:
+                    self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                
+                # 统一使用 GBK 编码保存
+                df.to_csv(self.last_output_file, index=False, encoding='gbk')
+                self.log_message(f"Results saved to {self.last_output_file}")
+                return df
+                
+            except Exception as e:
+                self.log_message(f"Error saving results: {str(e)}")
+                # 如果保存失败，尝试使用其他编码
+                try:
+                    df.to_csv(self.last_output_file, index=False, encoding='utf-8-sig')
+                    self.log_message(f"Results saved with UTF-8-SIG encoding to {self.last_output_file}")
+                    return df
+                except Exception as e2:
+                    self.log_message(f"Failed to save results with alternative encoding: {str(e2)}")
+                    return df
         else:
             self.log_message("No results found")
             return pd.DataFrame()
