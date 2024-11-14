@@ -1,4 +1,4 @@
-https://itch.io/
+https://slopeonline.online/
 https://cocrea.world/
 https://www.curseforge.com/
 https://www.kongregate.com/
@@ -23,7 +23,6 @@ https://gameforge.com/
 https://mybestgames.dk/
 https://starfish.games/
 https://peppagame.com/
-<<<<<<< HEAD
 https://www.twoplayergames.org/
 https://kbhgames.com/
 https://www.gamezhero.com/
@@ -38,17 +37,7 @@ https://www.hoodamath.com/
 https://playhop.com/
 https://1001games.com/
 https://friv.com
-
- 
-
-
-
-
-
-
-=======
 https://a01.5xlgame.com/
 https://5xlgame.com/
 https://4kzgame.com/
 https://www.friv.com/
->>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2

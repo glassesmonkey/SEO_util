@@ -57,15 +57,23 @@ class ScheduleManager:
         self.callback = callback
         self.running = False
         self.thread = None
+        self.interval_hours = 0
 
-    def start(self, time_str):
-        """启动定时任务"""
+    def start(self, interval_hours):
+        """启动定时任务
+        :param interval_hours: 间隔小时数
+        """
         if self.running:
             return
             
         self.running = True
+        self.interval_hours = interval_hours
         schedule.clear()
-        schedule.every().day.at(time_str).do(self.callback)
+        
+        # 立即执行一次
+        self.callback()
+        # 然后每隔指定小时数执行
+        schedule.every(interval_hours).hours.do(self.callback)
         
         self.thread = threading.Thread(target=self._run_schedule, daemon=True)
         self.thread.start()
@@ -105,7 +113,7 @@ class GameMonitorGUI:
         
         # 绑定窗口关闭事件
         self.root.protocol("WM_DELETE_WINDOW", self.on_closing)
-        
+
     def setup_styles(self):
         """设置界面样式"""
         style = ttk.Style()
@@ -130,6 +138,15 @@ class GameMonitorGUI:
         """设置GUI界面"""
         main_frame = ttk.Frame(self.root)
         main_frame.pack(fill=tk.BOTH, expand=True, padx=10, pady=10)
+
+        # 添加倒计时显示标签
+        self.countdown_var = tk.StringVar(value="未启用定时任务")
+        self.countdown_label = ttk.Label(main_frame, textvariable=self.countdown_var, 
+                                       font=('Helvetica', 10, 'bold'))
+        self.countdown_label.pack(pady=5)
+        
+        # 添加倒计时更新定时器
+        self.countdown_timer = None
 
         # 文件选择部分
         file_frame = ttk.LabelFrame(main_frame, text="文件选择", padding=5)
@@ -197,12 +214,12 @@ class GameMonitorGUI:
                        variable=self.scheduler_enabled,
                        command=self.toggle_schedule_fields).pack(side=tk.LEFT)
         
-        self.schedule_time = tk.StringVar(value="09:00")
-        self.schedule_time_entry = ttk.Entry(schedule_frame, 
-                                           textvariable=self.schedule_time, 
-                                           width=10)
-        self.schedule_time_entry.pack(side=tk.LEFT, padx=5)
-        ttk.Label(schedule_frame, text="（格式: HH:MM）").pack(side=tk.LEFT)
+        self.schedule_interval = tk.StringVar(value="24")
+        self.schedule_interval_entry = ttk.Entry(schedule_frame, 
+                                           textvariable=self.schedule_interval, 
+                                           width=5)
+        self.schedule_interval_entry.pack(side=tk.LEFT, padx=5)
+        ttk.Label(schedule_frame, text="小时").pack(side=tk.LEFT)
 
         # 时间范围选择
         time_frame = ttk.LabelFrame(main_frame, text="搜索时间范围", padding=5)
@@ -243,7 +260,7 @@ class GameMonitorGUI:
         self.proxy_port.set(self.config.config["proxy_port"])
         self.time_range.set(self.config.config["time_range"])
         self.scheduler_enabled.set(self.config.config["scheduler_enabled"])
-        self.schedule_time.set(self.config.config["schedule_time"])
+        self.schedule_interval.set(self.config.config.get("schedule_interval", "24"))
         
         # 更新各个字段状态
         self.toggle_proxy_fields()
@@ -252,7 +269,12 @@ class GameMonitorGUI:
 
         # 如果定时任务被启用，启动定时任务
         if self.scheduler_enabled.get():
-            self.schedule_manager.start(self.schedule_time.get())
+            try:
+                interval = float(self.schedule_interval.get())
+                self.schedule_manager.start(interval)
+            except ValueError:
+                messagebox.showerror("错误", "请输入有效的小时数!")
+                self.scheduler_enabled.set(False)
 
     def save_current_config(self):
         """保存当前配置"""
@@ -265,12 +287,12 @@ class GameMonitorGUI:
             "proxy_port": self.proxy_port.get(),
             "time_range": self.time_range.get(),
             "scheduler_enabled": self.scheduler_enabled.get(),
-            "schedule_time": self.schedule_time.get()
+            "schedule_interval": self.schedule_interval.get()
         })
         self.config.save_config()
 
     def toggle_proxy_fields(self):
-        """切换代理设置字段的启用状态"""
+        """切换代理置字段的启用状态"""
         state = 'normal' if self.proxy_enabled.get() else 'disabled'
         self.proxy_host_entry.configure(state=state)
         self.proxy_port_entry.configure(state=state)
@@ -284,12 +306,23 @@ class GameMonitorGUI:
     def toggle_schedule_fields(self):
         """切换定时任务字段的启用状态"""
         state = 'normal' if self.scheduler_enabled.get() else 'disabled'
-        self.schedule_time_entry.configure(state=state)
+        self.schedule_interval_entry.configure(state=state)
         
         if self.scheduler_enabled.get():
-            self.schedule_manager.start(self.schedule_time.get())
+            try:
+                interval = float(self.schedule_interval.get())
+                if interval <= 0:
+                    raise ValueError("间隔时间必须大于0")
+                self.schedule_manager.start(interval)
+                self.update_countdown()
+            except ValueError as e:
+                messagebox.showerror("错误", "请输入有效的小时数!")
+                self.scheduler_enabled.set(False)
         else:
             self.schedule_manager.stop()
+            if self.countdown_timer:
+                self.root.after_cancel(self.countdown_timer)
+            self.countdown_var.set("未启用定时任务")
 
     def browse_site_file(self):
         """浏览网站列表文件"""
@@ -317,6 +350,8 @@ class GameMonitorGUI:
         """窗口关闭时的处理"""
         self.save_current_config()
         self.schedule_manager.stop()
+        if self.countdown_timer:
+            self.root.after_cancel(self.countdown_timer)
         self.root.destroy()
 
     def update_progress(self, message):
@@ -390,8 +425,32 @@ class GameMonitorGUI:
         except Exception as e:
             self.update_progress(f"发生错误: {str(e)}")
         finally:
-            # 重新启用开始按钮
+            # 重新用开始按钮
             self.root.after(0, lambda: self.start_button.configure(state='normal'))
+
+    def update_countdown(self):
+        """更新倒计时显示"""
+        if not self.scheduler_enabled.get():
+            self.countdown_var.set("未启用定时任务")
+            return
+        
+        try:
+            # 获取下一次执行的时间
+            next_run = schedule.next_run()
+            if next_run:
+                time_diff = next_run - datetime.now()
+                hours = int(time_diff.total_seconds() // 3600)
+                minutes = int((time_diff.total_seconds() % 3600) // 60)
+                seconds = int(time_diff.total_seconds() % 60)
+                
+                self.countdown_var.set(f"距离下次执行还有: {hours:02d}:{minutes:02d}:{seconds:02d}")
+            else:
+                self.countdown_var.set("等待下次执行...")
+        except Exception:
+            self.countdown_var.set("等待下次执行...")
+        
+        # 每秒更新一次
+        self.countdown_timer = self.root.after(1000, self.update_countdown)
 
 class GameSiteMonitor:
     def __init__(self, sites_file="game_sites.txt", proxy_host=None, proxy_port=None, logger_callback=None, existing_csv=None):
@@ -420,9 +479,10 @@ class GameSiteMonitor:
             }
         
         self.logger_callback = logger_callback
-        self.last_output_file = None
+        self.last_output_file = existing_csv if existing_csv else None
         self.existing_csv = existing_csv
         self.existing_urls = set()
+        self.existing_df = None
         
         if existing_csv and os.path.exists(existing_csv):
             self._load_existing_urls()
@@ -433,10 +493,11 @@ class GameSiteMonitor:
         
         for encoding in encodings:
             try:
-                df = pd.read_csv(self.existing_csv, encoding=encoding)
-                if 'url' in df.columns:
-                    self.existing_urls = set(df['url'].tolist())
+                self.existing_df = pd.read_csv(self.existing_csv, encoding=encoding)
+                if 'url' in self.existing_df.columns:
+                    self.existing_urls = set(self.existing_df['url'].tolist())
                     self.log_message(f"Successfully loaded CSV with encoding: {encoding}")
+                    self.file_encoding = encoding
                     return
             except Exception as e:
                 continue
@@ -539,28 +600,58 @@ class GameSiteMonitor:
         cleaned_title = re.sub(r'(攻略|评测|资讯|下载|官网|专区|合集|手游|网游|页游|主机游戏|单机游戏)', '', title)
         return cleaned_title.strip()
 
-    def monitor_site(self, site, time_range):
-        """监控单个网站"""
+    def monitor_site(self, site, time_range, max_retries=3, initial_delay=10):
+        """
+        监控单个网站，添加重试机制
+        :param site: 网站地址
+        :param time_range: 时间范围
+        :param max_retries: 最大重试次数
+        :param initial_delay: 初始等待时间（秒）
+        """
         search_url = self.build_google_search_url(site, time_range)
         self.log_message(f"Monitoring {site} for {time_range} timeframe")
         
-        try:
-            response = requests.get(
-                search_url, 
-                headers=self.headers,
-                proxies=self.proxies,
-                timeout=30
-            )
-            if response.status_code == 200:
-                results = self.extract_search_results(response.text)
-                self.log_message(f"Found {len(results)} results for {site}")
-                return results
-            else:
-                self.log_message(f"Failed to fetch results for {site}: Status code {response.status_code}")
+        for attempt in range(max_retries):
+            try:
+                response = requests.get(
+                    search_url, 
+                    headers=self.headers,
+                    proxies=self.proxies,
+                    timeout=30
+                )
+                
+                if response.status_code == 200:
+                    results = self.extract_search_results(response.text)
+                    self.log_message(f"Found {len(results)} results for {site}")
+                    return results
+                elif response.status_code == 429:
+                    # 计算递增的等待时间
+                    wait_time = initial_delay * (2 ** attempt)  # 指数退避
+                    self.log_message(f"Rate limit hit for {site}, waiting {wait_time} seconds before retry {attempt + 1}/{max_retries}")
+                    time.sleep(wait_time)
+                    
+                    if attempt == max_retries - 1:
+                        self.log_message(f"Max retries reached for {site} after 429 status")
+                        return []
+                    continue
+                else:
+                    self.log_message(f"Failed to fetch results for {site}: Status code {response.status_code}")
+                    return []
+                    
+            except requests.exceptions.SSLError as e:
+                self.log_message(f"SSL Error for {site}: {str(e)}")
                 return []
-        except Exception as e:
-            self.log_message(f"Error monitoring {site}: {str(e)}")
-            return []
+            except requests.exceptions.RequestException as e:
+                if attempt == max_retries - 1:
+                    self.log_message(f"Error monitoring {site} after {max_retries} retries: {str(e)}")
+                    return []
+                
+                wait_time = initial_delay * (2 ** attempt)
+                self.log_message(f"Request failed for {site}, waiting {wait_time} seconds before retry {attempt + 1}/{max_retries}")
+                time.sleep(wait_time)
+                continue
+        
+        return []
 
     def monitor_all_sites(self, time_ranges=None):
         """监控所有网站"""
@@ -572,44 +663,52 @@ class GameSiteMonitor:
         for site in self.sites:
             for time_range in time_ranges:
                 results = self.monitor_site(site, time_range)
+                new_results = []
                 for result in results:
-                    result.update({
-                        'site': site,
-                        'time_range': time_range,
-                        'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                    })
-                all_results.extend(results)
+                    if result.get('url') not in self.existing_urls:
+                        result.update({
+                            'site': site,
+                            'time_range': time_range,
+                            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                        })
+                        new_results.append(result)
+                        self.existing_urls.add(result.get('url'))
                 
+                all_results.extend(new_results)
                 time.sleep(random.uniform(2, 5))
         
         if all_results:
-            df = pd.DataFrame(all_results)
+            new_df = pd.DataFrame(all_results)
             
             try:
-                # 如果使用现有CSV文件，则追加到现有文件
-                if self.existing_csv and os.path.exists(self.existing_csv):
-                    try:
-                        # 尝试用相同的编码读取现有文件
-                        existing_df = pd.read_csv(self.existing_csv, encoding='gbk')
-                        df = pd.concat([existing_df, df], ignore_index=True)
-                        self.last_output_file = self.existing_csv
-                    except Exception as e:
-                        self.log_message(f"Error reading existing CSV, creating new file: {str(e)}")
-                        self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                if self.existing_df is not None:
+                    df = pd.concat([self.existing_df, new_df], ignore_index=True)
+                    df = df.drop_duplicates(subset=['url'], keep='last')
                 else:
-                    self.last_output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                    df = new_df
                 
-                # 统一使用 GBK 编码保存
-                df.to_csv(self.last_output_file, index=False, encoding='gbk')
-                self.log_message(f"Results saved to {self.last_output_file}")
+                if hasattr(self, 'file_encoding'):
+                    encoding = self.file_encoding
+                else:
+                    encoding = 'gbk'
+                
+                if self.last_output_file:
+                    output_file = self.last_output_file
+                else:
+                    output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                
+                df.to_csv(output_file, index=False, encoding=encoding)
+                self.log_message(f"Results saved to {output_file}")
+                self.existing_df = df
                 return df
                 
             except Exception as e:
                 self.log_message(f"Error saving results: {str(e)}")
-                # 如果保存失败，尝试使用其他编码
                 try:
-                    df.to_csv(self.last_output_file, index=False, encoding='utf-8-sig')
-                    self.log_message(f"Results saved with UTF-8-SIG encoding to {self.last_output_file}")
+                    output_file = self.last_output_file or f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                    df.to_csv(output_file, index=False, encoding='utf-8-sig')
+                    self.log_message(f"Results saved with UTF-8-SIG encoding to {output_file}")
+                    self.existing_df = df
                     return df
                 except Exception as e2:
                     self.log_message(f"Failed to save results with alternative encoding: {str(e2)}")

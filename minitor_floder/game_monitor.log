@@ -141,3 +141,888 @@
 2024-11-09 11:35:41,781 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
 2024-11-09 11:35:43,484 - INFO - Failed to fetch results for https://peppagame.com/: Status code 429
 2024-11-09 11:35:46,955 - INFO - Results saved to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv
+2024-11-09 21:49:36,690 - INFO - Successfully loaded CSV with encoding: gbk
+2024-11-09 21:49:36,695 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-09 21:49:38,706 - INFO - Failed to fetch results for https://itch.io/: Status code 429
+2024-11-09 21:49:41,443 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-09 21:49:43,084 - INFO - Found 15 results for https://cocrea.world/
+2024-11-09 21:49:46,137 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-09 21:49:48,320 - INFO - Found 28 results for https://www.curseforge.com/
+2024-11-09 21:49:51,067 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-09 21:49:52,711 - INFO - Found 33 results for https://www.kongregate.com/
+2024-11-09 21:55:22,909 - INFO - Successfully loaded CSV with encoding: gbk
+2024-11-09 21:55:22,911 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-09 21:55:25,186 - INFO - Found 78 results for https://itch.io/
+2024-11-09 21:55:29,552 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-09 21:55:31,267 - INFO - Found 15 results for https://cocrea.world/
+2024-11-09 21:55:33,887 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-09 21:55:35,971 - INFO - Found 34 results for https://www.curseforge.com/
+2024-11-09 21:55:39,968 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-09 21:55:41,763 - INFO - Found 34 results for https://www.kongregate.com/
+2024-11-09 21:55:43,881 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-09 21:55:45,573 - INFO - Found 6 results for https://armorgames.com/
+2024-11-09 21:55:48,673 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-09 21:55:50,414 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-09 21:55:52,708 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-09 21:55:54,851 - INFO - Rate limit hit for https://www.crazygames.com/, waiting 10 seconds before retry 1/3
+2024-11-09 21:56:06,571 - INFO - Found 9 results for https://www.crazygames.com/
+2024-11-09 21:56:09,281 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-09 21:56:11,328 - INFO - Rate limit hit for https://y8.com/, waiting 10 seconds before retry 1/3
+2024-11-09 21:56:23,526 - INFO - Found 95 results for https://y8.com/
+2024-11-09 21:56:26,395 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-09 21:56:28,566 - INFO - Found 3 results for https://www.miniplay.com/
+2024-11-09 21:56:32,815 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-09 21:56:34,441 - INFO - Found 2 results for https://www.fandom.com/
+2024-11-09 21:56:37,516 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-09 21:56:39,711 - INFO - Found 69 results for https://www.coolmathgames.com/
+2024-11-09 21:56:41,784 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-09 21:56:43,523 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-09 21:56:48,016 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-09 21:56:49,721 - INFO - Found 23 results for https://gamedistribution.com/
+2024-11-09 21:56:52,681 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-09 21:56:54,381 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-09 21:56:56,697 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-09 21:56:58,771 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 10 seconds before retry 1/3
+2024-11-09 21:57:10,817 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 20 seconds before retry 2/3
+2024-11-09 21:57:32,596 - INFO - Found 35 results for https://gamemonetize.com/
+2024-11-09 21:57:35,855 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-09 21:57:37,540 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-09 21:57:40,705 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-09 21:57:42,450 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-09 21:57:45,397 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-09 21:57:47,521 - INFO - Found 100 results for https://playhop.com/
+2024-11-09 21:57:51,391 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-09 21:57:53,539 - INFO - Found 99 results for https://poki.com/
+2024-11-09 21:57:58,391 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-09 21:58:00,387 - INFO - Rate limit hit for https://www.ufreegames.com/, waiting 10 seconds before retry 1/3
+2024-11-09 21:58:12,580 - INFO - Rate limit hit for https://www.ufreegames.com/, waiting 20 seconds before retry 2/3
+2024-11-09 21:58:34,323 - INFO - Found 2 results for https://www.ufreegames.com/
+2024-11-09 21:58:38,688 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-09 21:58:40,668 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-09 21:58:53,752 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 20 seconds before retry 2/3
+2024-11-09 21:59:15,782 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 40 seconds before retry 3/3
+2024-11-09 21:59:55,794 - INFO - Max retries reached for https://www.gamepix.com/ after 429 status
+2024-11-09 21:59:58,811 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-09 22:00:01,144 - INFO - Found 94 results for https://gameforge.com/
+2024-11-09 22:00:04,079 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-09 22:00:06,076 - INFO - Rate limit hit for https://mybestgames.dk/, waiting 10 seconds before retry 1/3
+2024-11-09 22:00:18,119 - INFO - Rate limit hit for https://mybestgames.dk/, waiting 20 seconds before retry 2/3
+2024-11-09 22:00:40,001 - INFO - Rate limit hit for https://mybestgames.dk/, waiting 40 seconds before retry 3/3
+2024-11-09 22:01:20,021 - INFO - Max retries reached for https://mybestgames.dk/ after 429 status
+2024-11-09 22:01:23,087 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-09 22:01:24,768 - INFO - Found 0 results for https://starfish.games/
+2024-11-09 22:01:29,364 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-09 22:01:30,996 - INFO - Found 0 results for https://peppagame.com/
+2024-11-09 22:01:33,729 - INFO - Monitoring <<<<<<< HEAD for 1w timeframe
+2024-11-09 22:01:35,824 - INFO - Rate limit hit for <<<<<<< HEAD, waiting 10 seconds before retry 1/3
+2024-11-09 22:01:48,589 - INFO - Found 100 results for <<<<<<< HEAD
+2024-11-09 22:01:52,354 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-09 22:01:54,340 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 10 seconds before retry 1/3
+2024-11-09 22:02:06,016 - INFO - Found 9 results for https://www.twoplayergames.org/
+2024-11-09 22:02:08,624 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-09 22:02:10,385 - INFO - Found 25 results for https://kbhgames.com/
+2024-11-09 22:02:15,384 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-09 22:02:17,174 - INFO - Found 7 results for https://www.gamezhero.com/
+2024-11-09 22:02:20,334 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-09 22:02:22,103 - INFO - Found 35 results for https://gamemonetize.com/
+2024-11-09 22:02:24,392 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-09 22:02:26,127 - INFO - Found 23 results for https://gamedistribution.com/
+2024-11-09 22:02:30,761 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-09 22:02:32,890 - INFO - Found 67 results for https://www.gamepix.com/
+2024-11-09 22:02:37,279 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-09 22:02:39,048 - INFO - Found 19 results for https://www.lofgames.com/
+2024-11-09 22:02:41,592 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-09 22:02:43,722 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-09 22:02:55,836 - INFO - Found 99 results for https://poki.com/
+2024-11-09 22:02:59,196 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-09 22:03:01,031 - INFO - Found 34 results for https://igroutka.ru/
+2024-11-09 22:03:04,708 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-09 22:03:06,429 - INFO - Found 28 results for https://6games.eu/
+2024-11-09 22:03:09,642 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-09 22:03:11,790 - INFO - Rate limit hit for https://www.hoodamath.com/, waiting 10 seconds before retry 1/3
+2024-11-09 22:03:24,081 - INFO - Rate limit hit for https://www.hoodamath.com/, waiting 20 seconds before retry 2/3
+2024-11-09 22:03:45,779 - INFO - Found 1 results for https://www.hoodamath.com/
+2024-11-09 22:03:50,494 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-09 22:03:52,627 - INFO - Found 100 results for https://playhop.com/
+2024-11-09 22:03:56,922 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-09 22:03:59,110 - INFO - Rate limit hit for https://1001games.com/, waiting 10 seconds before retry 1/3
+2024-11-09 22:04:11,125 - INFO - Rate limit hit for https://1001games.com/, waiting 20 seconds before retry 2/3
+2024-11-09 22:04:32,794 - INFO - Found 3 results for https://1001games.com/
+2024-11-09 22:04:35,938 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-09 22:04:37,749 - INFO - Found 4 results for https://friv.com
+2024-11-09 22:04:40,390 - INFO - Monitoring ======= for 1w timeframe
+2024-11-09 22:04:42,248 - INFO - Found 0 results for =======
+2024-11-09 22:04:46,358 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-09 22:04:48,218 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-11-09 22:04:51,024 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-09 22:04:52,805 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-09 22:04:57,711 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-09 22:04:59,586 - INFO - Rate limit hit for https://4kzgame.com/, waiting 10 seconds before retry 1/3
+2024-11-09 22:05:11,719 - INFO - Rate limit hit for https://4kzgame.com/, waiting 20 seconds before retry 2/3
+2024-11-09 22:05:33,807 - INFO - Rate limit hit for https://4kzgame.com/, waiting 40 seconds before retry 3/3
+2024-11-09 22:06:13,813 - INFO - Max retries reached for https://4kzgame.com/ after 429 status
+2024-11-09 22:06:18,080 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-09 22:06:20,055 - INFO - Rate limit hit for https://www.friv.com/, waiting 10 seconds before retry 1/3
+2024-11-09 22:06:31,793 - INFO - Found 4 results for https://www.friv.com/
+2024-11-09 22:06:36,300 - INFO - Monitoring >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2 for 1w timeframe
+2024-11-09 22:06:38,226 - INFO - Rate limit hit for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2, waiting 10 seconds before retry 1/3
+2024-11-09 22:06:50,200 - INFO - Rate limit hit for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2, waiting 20 seconds before retry 2/3
+2024-11-09 22:07:11,952 - INFO - Found 0 results for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
+2024-11-09 22:07:15,073 - INFO - Error saving results: 'gbk' codec can't encode character '\u204d' in position 21: illegal multibyte sequence
+2024-11-09 22:07:15,121 - INFO - Results saved with UTF-8-SIG encoding to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv
+2024-11-10 09:00:07,909 - INFO - Successfully loaded CSV with encoding: utf-8-sig
+2024-11-10 09:00:07,918 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-10 09:00:12,993 - INFO - SSL Error for https://itch.io/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//itch.io/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-10 09:00:17,761 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-10 09:00:19,225 - INFO - Rate limit hit for https://cocrea.world/, waiting 10 seconds before retry 1/3
+2024-11-10 09:00:30,437 - INFO - Found 1 results for https://cocrea.world/
+2024-11-10 09:00:33,035 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-10 09:00:34,660 - INFO - Found 35 results for https://www.curseforge.com/
+2024-11-10 09:00:38,863 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-10 09:00:40,013 - INFO - Found 8 results for https://www.kongregate.com/
+2024-11-10 09:00:43,562 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-10 09:00:44,644 - INFO - Found 0 results for https://armorgames.com/
+2024-11-10 09:00:48,822 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-10 09:00:49,826 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-10 09:00:52,481 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-10 09:00:53,633 - INFO - Found 0 results for https://www.crazygames.com/
+2024-11-10 09:00:56,110 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-10 09:00:57,549 - INFO - Rate limit hit for https://y8.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:01:09,126 - INFO - Rate limit hit for https://y8.com/, waiting 20 seconds before retry 2/3
+2024-11-10 09:01:31,126 - INFO - Found 25 results for https://y8.com/
+2024-11-10 09:01:35,907 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-10 09:01:37,395 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:01:49,075 - INFO - Found 7 results for https://www.miniplay.com/
+2024-11-10 09:01:52,639 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-10 09:01:53,777 - INFO - Found 1 results for https://www.fandom.com/
+2024-11-10 09:01:58,733 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-10 09:02:00,145 - INFO - Found 12 results for https://www.coolmathgames.com/
+2024-11-10 09:02:05,057 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-10 09:02:06,056 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-10 09:02:10,660 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-10 09:02:11,806 - INFO - Found 1 results for https://gamedistribution.com/
+2024-11-10 09:02:15,864 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-10 09:02:16,944 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-10 09:02:21,506 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-10 09:02:22,634 - INFO - Found 0 results for https://gamemonetize.com/
+2024-11-10 09:02:27,719 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-10 09:02:29,145 - INFO - Rate limit hit for https://funhtml5games.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:02:40,669 - INFO - Rate limit hit for https://funhtml5games.com/, waiting 20 seconds before retry 2/3
+2024-11-10 09:03:01,794 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-10 09:03:06,068 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-10 09:03:07,190 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-10 09:03:11,556 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-10 09:03:13,043 - INFO - Found 64 results for https://playhop.com/
+2024-11-10 09:03:17,048 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-10 09:03:18,642 - INFO - Found 30 results for https://poki.com/
+2024-11-10 09:03:23,178 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-10 09:03:24,205 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-11-10 09:03:28,927 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-10 09:03:30,239 - INFO - Found 4 results for https://www.gamepix.com/
+2024-11-10 09:03:33,549 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-10 09:03:35,065 - INFO - Rate limit hit for https://gameforge.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:03:46,603 - INFO - Found 26 results for https://gameforge.com/
+2024-11-10 09:03:51,592 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-10 09:03:53,019 - INFO - Rate limit hit for https://mybestgames.dk/, waiting 10 seconds before retry 1/3
+2024-11-10 09:04:04,078 - INFO - Found 0 results for https://mybestgames.dk/
+2024-11-10 09:04:07,527 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-10 09:04:09,112 - INFO - Rate limit hit for https://starfish.games/, waiting 10 seconds before retry 1/3
+2024-11-10 09:04:20,204 - INFO - Found 0 results for https://starfish.games/
+2024-11-10 09:04:24,620 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-10 09:04:25,707 - INFO - Found 0 results for https://peppagame.com/
+2024-11-10 09:04:28,110 - INFO - Monitoring <<<<<<< HEAD for 1w timeframe
+2024-11-10 09:04:29,903 - INFO - Found 46 results for <<<<<<< HEAD
+2024-11-10 09:04:34,742 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-10 09:04:36,414 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 10 seconds before retry 1/3
+2024-11-10 09:04:47,519 - INFO - Found 2 results for https://www.twoplayergames.org/
+2024-11-10 09:04:49,924 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-10 09:04:51,546 - INFO - Rate limit hit for https://kbhgames.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:05:02,678 - INFO - Found 0 results for https://kbhgames.com/
+2024-11-10 09:05:04,784 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-10 09:05:05,892 - INFO - Found 0 results for https://www.gamezhero.com/
+2024-11-10 09:05:08,525 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-10 09:05:09,687 - INFO - Found 0 results for https://gamemonetize.com/
+2024-11-10 09:05:13,181 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-10 09:05:14,277 - INFO - Found 1 results for https://gamedistribution.com/
+2024-11-10 09:05:17,511 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-10 09:05:18,839 - INFO - Found 4 results for https://www.gamepix.com/
+2024-11-10 09:05:21,107 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-10 09:05:23,063 - INFO - Rate limit hit for https://www.lofgames.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:05:34,193 - INFO - Found 1 results for https://www.lofgames.com/
+2024-11-10 09:05:38,733 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-10 09:05:40,277 - INFO - Found 31 results for https://poki.com/
+2024-11-10 09:05:44,419 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-10 09:05:45,709 - INFO - Found 3 results for https://igroutka.ru/
+2024-11-10 09:05:49,268 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-10 09:05:50,313 - INFO - Found 3 results for https://6games.eu/
+2024-11-10 09:05:53,693 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-10 09:05:54,791 - INFO - Found 0 results for https://www.hoodamath.com/
+2024-11-10 09:05:57,374 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-10 09:05:58,832 - INFO - Rate limit hit for https://playhop.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:06:10,294 - INFO - Found 64 results for https://playhop.com/
+2024-11-10 09:06:12,429 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-10 09:06:13,532 - INFO - Found 0 results for https://1001games.com/
+2024-11-10 09:06:16,711 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-10 09:06:17,751 - INFO - Found 1 results for https://friv.com
+2024-11-10 09:06:19,860 - INFO - Monitoring ======= for 1w timeframe
+2024-11-10 09:06:20,932 - INFO - Found 0 results for =======
+2024-11-10 09:06:25,691 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-10 09:06:26,791 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-11-10 09:06:30,460 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-10 09:06:31,538 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-10 09:06:35,731 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-10 09:06:37,141 - INFO - Rate limit hit for https://4kzgame.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:06:48,197 - INFO - Found 1 results for https://4kzgame.com/
+2024-11-10 09:06:51,323 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-10 09:06:52,892 - INFO - Rate limit hit for https://www.friv.com/, waiting 10 seconds before retry 1/3
+2024-11-10 09:07:03,949 - INFO - Found 1 results for https://www.friv.com/
+2024-11-10 09:07:05,971 - INFO - Monitoring >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2 for 1w timeframe
+2024-11-10 09:07:07,492 - INFO - Rate limit hit for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2, waiting 10 seconds before retry 1/3
+2024-11-10 09:07:18,559 - INFO - Found 0 results for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
+2024-11-10 09:07:22,092 - INFO - Error reading existing CSV, creating new file: 'gbk' codec can't decode byte 0xaa in position 2401: illegal multibyte sequence
+2024-11-10 09:07:22,134 - INFO - Error saving results: 'gbk' codec can't encode character '\u0e23' in position 35: illegal multibyte sequence
+2024-11-10 09:07:22,150 - INFO - Results saved with UTF-8-SIG encoding to game_monitor_results_20241110_090722.csv
+2024-11-11 09:00:11,969 - INFO - Successfully loaded CSV with encoding: utf-8-sig
+2024-11-11 09:00:11,979 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-11 09:00:13,637 - INFO - Found 47 results for https://itch.io/
+2024-11-11 09:00:17,400 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-11 09:00:18,887 - INFO - Rate limit hit for https://cocrea.world/, waiting 10 seconds before retry 1/3
+2024-11-11 09:00:30,174 - INFO - Rate limit hit for https://cocrea.world/, waiting 20 seconds before retry 2/3
+2024-11-11 09:00:51,315 - INFO - Found 7 results for https://cocrea.world/
+2024-11-11 09:00:54,392 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-11 09:00:55,702 - INFO - Rate limit hit for https://www.curseforge.com/, waiting 10 seconds before retry 1/3
+2024-11-11 09:01:06,609 - INFO - Found 0 results for https://www.curseforge.com/
+2024-11-11 09:01:10,782 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-11 09:01:12,012 - INFO - Found 17 results for https://www.kongregate.com/
+2024-11-11 09:01:14,482 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-11 09:01:15,568 - INFO - Found 2 results for https://armorgames.com/
+2024-11-11 09:01:20,145 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-11 09:01:21,223 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-11 09:01:26,197 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-11 09:01:27,307 - INFO - Found 1 results for https://www.crazygames.com/
+2024-11-11 09:01:30,492 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-11 09:01:31,963 - INFO - Found 62 results for https://y8.com/
+2024-11-11 09:01:34,747 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-11 09:01:36,268 - INFO - Found 17 results for https://www.miniplay.com/
+2024-11-11 09:01:38,637 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-11 09:01:39,811 - INFO - Found 2 results for https://www.fandom.com/
+2024-11-11 09:01:41,962 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-11 09:01:43,427 - INFO - Found 31 results for https://www.coolmathgames.com/
+2024-11-11 09:01:46,249 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-11 09:01:47,236 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-11 09:01:49,256 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-11 09:01:50,297 - INFO - Found 6 results for https://gamedistribution.com/
+2024-11-11 09:01:55,018 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-11 09:01:56,081 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-11 09:01:58,612 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-11 09:01:59,751 - INFO - Found 2 results for https://gamemonetize.com/
+2024-11-11 09:02:03,056 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-11 09:02:04,164 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-11 09:02:09,113 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-11 09:02:10,155 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-11 09:02:13,564 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-11 09:02:15,180 - INFO - Found 81 results for https://playhop.com/
+2024-11-11 09:02:19,683 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-11 09:02:21,283 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-11 09:02:32,788 - INFO - Rate limit hit for https://poki.com/, waiting 20 seconds before retry 2/3
+2024-11-11 09:02:54,297 - INFO - Found 49 results for https://poki.com/
+2024-11-11 09:02:56,467 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-11 09:02:57,597 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-11-11 09:03:01,979 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-11 09:03:03,309 - INFO - Found 19 results for https://www.gamepix.com/
+2024-11-11 09:03:06,206 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-11 09:03:07,698 - INFO - Found 69 results for https://gameforge.com/
+2024-11-11 09:03:09,904 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-11 09:03:10,877 - INFO - Found 0 results for https://mybestgames.dk/
+2024-11-11 09:03:15,644 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-11 09:03:16,735 - INFO - Found 0 results for https://starfish.games/
+2024-11-11 09:03:21,275 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-11 09:03:22,666 - INFO - Rate limit hit for https://peppagame.com/, waiting 10 seconds before retry 1/3
+2024-11-11 09:03:33,674 - INFO - Found 0 results for https://peppagame.com/
+2024-11-11 09:03:38,080 - INFO - Monitoring <<<<<<< HEAD for 1w timeframe
+2024-11-11 09:03:39,873 - INFO - Found 69 results for <<<<<<< HEAD
+2024-11-11 09:03:42,559 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-11 09:03:43,636 - INFO - Found 8 results for https://www.twoplayergames.org/
+2024-11-11 09:03:48,004 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-11 09:03:53,035 - INFO - SSL Error for https://kbhgames.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//kbhgames.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-11 09:03:55,677 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-11 09:03:56,744 - INFO - Found 0 results for https://www.gamezhero.com/
+2024-11-11 09:03:59,068 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-11 09:04:00,422 - INFO - Found 2 results for https://gamemonetize.com/
+2024-11-11 09:04:03,863 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-11 09:04:04,988 - INFO - Found 6 results for https://gamedistribution.com/
+2024-11-11 09:04:07,082 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-11 09:04:08,454 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-11 09:04:19,744 - INFO - Found 19 results for https://www.gamepix.com/
+2024-11-11 09:04:21,897 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-11 09:04:23,092 - INFO - Found 6 results for https://www.lofgames.com/
+2024-11-11 09:04:27,861 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-11 09:04:29,435 - INFO - Found 49 results for https://poki.com/
+2024-11-11 09:04:32,985 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-11 09:04:34,227 - INFO - Found 6 results for https://igroutka.ru/
+2024-11-11 09:04:38,508 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-11 09:04:39,886 - INFO - Rate limit hit for https://6games.eu/, waiting 10 seconds before retry 1/3
+2024-11-11 09:04:51,427 - INFO - Rate limit hit for https://6games.eu/, waiting 20 seconds before retry 2/3
+2024-11-11 09:05:12,546 - INFO - Found 8 results for https://6games.eu/
+2024-11-11 09:05:17,014 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-11 09:05:18,071 - INFO - Found 0 results for https://www.hoodamath.com/
+2024-11-11 09:05:21,780 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-11 09:05:23,225 - INFO - Rate limit hit for https://playhop.com/, waiting 10 seconds before retry 1/3
+2024-11-11 09:05:34,745 - INFO - Found 81 results for https://playhop.com/
+2024-11-11 09:05:37,198 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-11 09:05:38,224 - INFO - Found 4 results for https://1001games.com/
+2024-11-11 09:05:42,380 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-11 09:05:43,510 - INFO - Found 3 results for https://friv.com
+2024-11-11 09:05:47,933 - INFO - Monitoring ======= for 1w timeframe
+2024-11-11 09:05:48,992 - INFO - Found 0 results for =======
+2024-11-11 09:05:52,189 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-11 09:05:53,187 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-11-11 09:05:55,380 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-11 09:05:56,476 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-11 09:06:00,866 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-11 09:06:01,935 - INFO - Found 1 results for https://4kzgame.com/
+2024-11-11 09:06:04,484 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-11 09:06:05,559 - INFO - Found 3 results for https://www.friv.com/
+2024-11-11 09:06:09,855 - INFO - Monitoring >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2 for 1w timeframe
+2024-11-11 09:06:11,240 - INFO - Rate limit hit for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2, waiting 10 seconds before retry 1/3
+2024-11-11 09:06:22,263 - INFO - Found 0 results for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
+2024-11-11 09:06:26,753 - INFO - Error reading existing CSV, creating new file: 'gbk' codec can't decode byte 0xaa in position 2401: illegal multibyte sequence
+2024-11-11 09:06:26,773 - INFO - Error saving results: 'gbk' codec can't encode character '\u03af' in position 23: illegal multibyte sequence
+2024-11-11 09:06:26,947 - INFO - Results saved with UTF-8-SIG encoding to game_monitor_results_20241111_090626.csv
+2024-11-12 07:56:19,865 - INFO - Successfully loaded CSV with encoding: utf-8-sig
+2024-11-12 07:56:19,867 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-12 07:56:21,132 - INFO - Rate limit hit for https://itch.io/, waiting 10 seconds before retry 1/3
+2024-11-12 07:56:32,649 - INFO - Rate limit hit for https://itch.io/, waiting 20 seconds before retry 2/3
+2024-11-12 07:56:54,143 - INFO - Rate limit hit for https://itch.io/, waiting 40 seconds before retry 3/3
+2024-11-12 07:57:34,145 - INFO - Max retries reached for https://itch.io/ after 429 status
+2024-11-12 07:57:37,871 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-12 07:57:39,337 - INFO - Rate limit hit for https://cocrea.world/, waiting 10 seconds before retry 1/3
+2024-11-12 07:57:50,781 - INFO - Rate limit hit for https://cocrea.world/, waiting 20 seconds before retry 2/3
+2024-11-12 07:58:11,975 - INFO - Found 10 results for https://cocrea.world/
+2024-11-12 07:58:16,200 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-12 07:58:17,666 - INFO - Found 89 results for https://www.curseforge.com/
+2024-11-12 07:58:22,327 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-12 07:58:23,460 - INFO - Found 25 results for https://www.kongregate.com/
+2024-11-12 07:58:27,786 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-12 07:58:28,895 - INFO - Found 3 results for https://armorgames.com/
+2024-11-12 07:58:31,149 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-12 07:58:32,160 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-12 07:58:35,992 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-12 07:58:37,445 - INFO - Rate limit hit for https://www.crazygames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 07:58:48,773 - INFO - Found 4 results for https://www.crazygames.com/
+2024-11-12 07:58:50,902 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-12 07:58:52,487 - INFO - Found 83 results for https://y8.com/
+2024-11-12 07:58:55,586 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-12 07:58:56,992 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 10 seconds before retry 1/3
+2024-11-12 07:59:08,337 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 20 seconds before retry 2/3
+2024-11-12 07:59:29,951 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 40 seconds before retry 3/3
+2024-11-12 08:00:09,965 - INFO - Max retries reached for https://www.miniplay.com/ after 429 status
+2024-11-12 08:00:14,549 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-12 08:00:16,344 - INFO - Rate limit hit for https://www.fandom.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:00:27,396 - INFO - Found 4 results for https://www.fandom.com/
+2024-11-12 08:00:31,915 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-12 08:00:33,438 - INFO - Rate limit hit for https://www.coolmathgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:00:44,982 - INFO - Found 45 results for https://www.coolmathgames.com/
+2024-11-12 08:00:48,616 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-12 08:00:49,783 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-12 08:00:54,502 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-12 08:00:55,696 - INFO - Found 21 results for https://gamedistribution.com/
+2024-11-12 08:00:59,400 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-12 08:01:00,755 - INFO - Rate limit hit for https://www.games.dev.env.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:01:12,260 - INFO - Rate limit hit for https://www.games.dev.env.gamepix.com/, waiting 20 seconds before retry 2/3
+2024-11-12 08:01:33,349 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-12 08:01:37,647 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-12 08:01:39,071 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:01:50,238 - INFO - Found 4 results for https://gamemonetize.com/
+2024-11-12 08:01:53,142 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-12 08:01:54,594 - INFO - Rate limit hit for https://funhtml5games.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:02:05,626 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-12 08:02:08,955 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-12 08:02:10,050 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-12 08:02:14,487 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-12 08:02:16,014 - INFO - Found 88 results for https://playhop.com/
+2024-11-12 08:02:20,661 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-12 08:02:22,404 - INFO - Found 79 results for https://poki.com/
+2024-11-12 08:02:26,259 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-12 08:02:27,440 - INFO - Found 1 results for https://www.ufreegames.com/
+2024-11-12 08:02:32,362 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-12 08:02:33,838 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:02:45,228 - INFO - Found 41 results for https://www.gamepix.com/
+2024-11-12 08:02:50,091 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-12 08:02:51,676 - INFO - Found 82 results for https://gameforge.com/
+2024-11-12 08:02:53,838 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-12 08:02:54,845 - INFO - Found 0 results for https://mybestgames.dk/
+2024-11-12 08:02:58,589 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-12 08:03:03,632 - INFO - SSL Error for https://starfish.games/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//starfish.games/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-12 08:03:08,544 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-12 08:03:09,615 - INFO - Found 0 results for https://peppagame.com/
+2024-11-12 08:03:11,968 - INFO - Monitoring <<<<<<< HEAD for 1w timeframe
+2024-11-12 08:03:13,951 - INFO - Found 76 results for <<<<<<< HEAD
+2024-11-12 08:03:18,281 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-12 08:03:19,824 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 10 seconds before retry 1/3
+2024-11-12 08:03:30,981 - INFO - Found 5 results for https://www.twoplayergames.org/
+2024-11-12 08:03:34,893 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-12 08:03:36,190 - INFO - Rate limit hit for https://kbhgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:03:47,720 - INFO - Rate limit hit for https://kbhgames.com/, waiting 20 seconds before retry 2/3
+2024-11-12 08:04:09,218 - INFO - Rate limit hit for https://kbhgames.com/, waiting 40 seconds before retry 3/3
+2024-11-12 08:04:49,228 - INFO - Max retries reached for https://kbhgames.com/ after 429 status
+2024-11-12 08:04:54,116 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-12 08:04:55,585 - INFO - Rate limit hit for https://www.gamezhero.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:05:06,735 - INFO - Found 0 results for https://www.gamezhero.com/
+2024-11-12 08:05:09,152 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-12 08:05:10,334 - INFO - Found 0 results for https://gamemonetize.com/
+2024-11-12 08:05:12,759 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-12 08:05:13,924 - INFO - Found 0 results for https://gamedistribution.com/
+2024-11-12 08:05:16,375 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-12 08:05:18,077 - INFO - Found 0 results for https://www.gamepix.com/
+2024-11-12 08:05:20,310 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-12 08:05:21,648 - INFO - Rate limit hit for https://www.lofgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:05:32,947 - INFO - Rate limit hit for https://www.lofgames.com/, waiting 20 seconds before retry 2/3
+2024-11-12 08:05:54,475 - INFO - Rate limit hit for https://www.lofgames.com/, waiting 40 seconds before retry 3/3
+2024-11-12 08:06:34,488 - INFO - Max retries reached for https://www.lofgames.com/ after 429 status
+2024-11-12 08:06:38,906 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-12 08:06:40,442 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:06:52,055 - INFO - Found 1 results for https://poki.com/
+2024-11-12 08:06:56,886 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-12 08:06:58,079 - INFO - Found 9 results for https://igroutka.ru/
+2024-11-12 08:07:02,519 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-12 08:07:03,945 - INFO - Rate limit hit for https://6games.eu/, waiting 10 seconds before retry 1/3
+2024-11-12 08:07:15,377 - INFO - Rate limit hit for https://6games.eu/, waiting 20 seconds before retry 2/3
+2024-11-12 08:07:36,715 - INFO - Rate limit hit for https://6games.eu/, waiting 40 seconds before retry 3/3
+2024-11-12 08:08:16,727 - INFO - Max retries reached for https://6games.eu/ after 429 status
+2024-11-12 08:08:19,724 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-12 08:08:20,773 - INFO - Found 0 results for https://www.hoodamath.com/
+2024-11-12 08:08:24,749 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-12 08:08:26,045 - INFO - Rate limit hit for https://playhop.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:08:37,529 - INFO - Found 2 results for https://playhop.com/
+2024-11-12 08:08:41,570 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-12 08:08:42,642 - INFO - Found 4 results for https://1001games.com/
+2024-11-12 08:08:45,588 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-12 08:08:46,848 - INFO - Rate limit hit for https://friv.com, waiting 10 seconds before retry 1/3
+2024-11-12 08:08:58,249 - INFO - Rate limit hit for https://friv.com, waiting 20 seconds before retry 2/3
+2024-11-12 08:09:19,402 - INFO - Found 3 results for https://friv.com
+2024-11-12 08:09:23,937 - INFO - Monitoring ======= for 1w timeframe
+2024-11-12 08:09:25,026 - INFO - Found 0 results for =======
+2024-11-12 08:09:29,324 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-12 08:09:30,678 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:09:42,138 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 20 seconds before retry 2/3
+2024-11-12 08:10:03,571 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 40 seconds before retry 3/3
+2024-11-12 08:10:43,584 - INFO - Max retries reached for https://a01.5xlgame.com/ after 429 status
+2024-11-12 08:10:48,025 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-12 08:10:49,636 - INFO - Rate limit hit for https://5xlgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:11:00,766 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-12 08:11:03,850 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-12 08:11:05,141 - INFO - Rate limit hit for https://4kzgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 08:11:16,241 - INFO - Found 1 results for https://4kzgame.com/
+2024-11-12 08:11:20,167 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-12 08:11:21,258 - INFO - Found 0 results for https://www.friv.com/
+2024-11-12 08:11:24,149 - INFO - Monitoring >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2 for 1w timeframe
+2024-11-12 08:11:25,258 - INFO - Found 0 results for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
+2024-11-12 08:11:28,902 - INFO - Results saved to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv
+2024-11-12 09:00:12,069 - INFO - Successfully loaded CSV with encoding: utf-8-sig
+2024-11-12 09:00:12,073 - INFO - Monitoring https://itch.io/ for 1w timeframe
+2024-11-12 09:00:13,498 - INFO - Rate limit hit for https://itch.io/, waiting 10 seconds before retry 1/3
+2024-11-12 09:00:25,179 - INFO - Found 58 results for https://itch.io/
+2024-11-12 09:00:27,539 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-12 09:00:28,811 - INFO - Rate limit hit for https://cocrea.world/, waiting 10 seconds before retry 1/3
+2024-11-12 09:00:40,042 - INFO - Found 0 results for https://cocrea.world/
+2024-11-12 09:00:43,049 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-12 09:00:44,409 - INFO - Rate limit hit for https://www.curseforge.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:00:55,874 - INFO - Rate limit hit for https://www.curseforge.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:01:17,213 - INFO - Rate limit hit for https://www.curseforge.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:01:57,223 - INFO - Max retries reached for https://www.curseforge.com/ after 429 status
+2024-11-12 09:02:00,914 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-12 09:02:02,045 - INFO - Found 1 results for https://www.kongregate.com/
+2024-11-12 09:02:04,156 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-12 09:02:05,603 - INFO - Rate limit hit for https://armorgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:02:16,681 - INFO - Found 0 results for https://armorgames.com/
+2024-11-12 09:02:19,103 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-12 09:02:20,579 - INFO - Rate limit hit for https://www.addictinggames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:02:32,133 - INFO - Rate limit hit for https://www.addictinggames.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:02:53,490 - INFO - Rate limit hit for https://www.addictinggames.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:03:33,503 - INFO - Max retries reached for https://www.addictinggames.com/ after 429 status
+2024-11-12 09:03:38,235 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-12 09:03:39,370 - INFO - Found 0 results for https://www.crazygames.com/
+2024-11-12 09:03:42,186 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-12 09:03:43,655 - INFO - Rate limit hit for https://y8.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:03:55,157 - INFO - Found 1 results for https://y8.com/
+2024-11-12 09:03:57,502 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-12 09:03:59,040 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:04:10,570 - INFO - Found 19 results for https://www.miniplay.com/
+2024-11-12 09:04:13,068 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-12 09:04:14,511 - INFO - Rate limit hit for https://www.fandom.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:04:26,178 - INFO - Rate limit hit for https://www.fandom.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:04:47,745 - INFO - Rate limit hit for https://www.fandom.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:05:27,757 - INFO - Max retries reached for https://www.fandom.com/ after 429 status
+2024-11-12 09:05:31,715 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-12 09:05:33,361 - INFO - Found 1 results for https://www.coolmathgames.com/
+2024-11-12 09:05:38,125 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-12 09:05:39,606 - INFO - Rate limit hit for https://play.dictionary.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:05:50,593 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-12 09:05:53,772 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-12 09:05:58,797 - INFO - SSL Error for https://gamedistribution.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//gamedistribution.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-12 09:06:03,125 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-12 09:06:04,595 - INFO - Rate limit hit for https://www.games.dev.env.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:06:16,019 - INFO - Rate limit hit for https://www.games.dev.env.gamepix.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:06:37,063 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-12 09:06:39,182 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-12 09:06:40,441 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:06:51,578 - INFO - Found 0 results for https://gamemonetize.com/
+2024-11-12 09:06:56,264 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-12 09:06:57,431 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-12 09:07:01,605 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-12 09:07:02,912 - INFO - Rate limit hit for https://1000webgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:07:14,299 - INFO - Rate limit hit for https://1000webgames.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:07:35,304 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-12 09:07:38,289 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-12 09:07:39,980 - INFO - Found 11 results for https://playhop.com/
+2024-11-12 09:07:43,430 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-12 09:07:44,895 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:07:56,442 - INFO - Rate limit hit for https://poki.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:08:17,854 - INFO - Rate limit hit for https://poki.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:08:57,860 - INFO - Max retries reached for https://poki.com/ after 429 status
+2024-11-12 09:09:01,436 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-12 09:09:02,553 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-11-12 09:09:07,088 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-12 09:09:08,503 - INFO - Found 2 results for https://www.gamepix.com/
+2024-11-12 09:09:11,096 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-12 09:09:12,594 - INFO - Found 3 results for https://gameforge.com/
+2024-11-12 09:09:14,864 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-12 09:09:16,007 - INFO - Found 0 results for https://mybestgames.dk/
+2024-11-12 09:09:20,200 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-12 09:09:21,184 - INFO - Found 0 results for https://starfish.games/
+2024-11-12 09:09:23,916 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-12 09:09:28,976 - INFO - Rate limit hit for https://peppagame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:09:40,019 - INFO - Found 0 results for https://peppagame.com/
+2024-11-12 09:09:43,653 - INFO - Monitoring <<<<<<< HEAD for 1w timeframe
+2024-11-12 09:09:44,964 - INFO - Rate limit hit for <<<<<<< HEAD, waiting 10 seconds before retry 1/3
+2024-11-12 09:09:56,894 - INFO - Found 22 results for <<<<<<< HEAD
+2024-11-12 09:10:01,751 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-12 09:10:03,024 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 10 seconds before retry 1/3
+2024-11-12 09:10:14,247 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 20 seconds before retry 2/3
+2024-11-12 09:10:35,418 - INFO - Found 1 results for https://www.twoplayergames.org/
+2024-11-12 09:10:38,479 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-12 09:10:39,627 - INFO - Found 18 results for https://kbhgames.com/
+2024-11-12 09:10:42,756 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-12 09:10:44,199 - INFO - Rate limit hit for https://www.gamezhero.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:10:55,531 - INFO - Rate limit hit for https://www.gamezhero.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:11:17,491 - INFO - Rate limit hit for https://www.gamezhero.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:11:57,504 - INFO - Max retries reached for https://www.gamezhero.com/ after 429 status
+2024-11-12 09:12:01,874 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-12 09:12:03,035 - INFO - Found 0 results for https://gamemonetize.com/
+2024-11-12 09:12:07,618 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-12 09:12:09,145 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:12:20,702 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:12:42,158 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:13:22,173 - INFO - Max retries reached for https://gamedistribution.com/ after 429 status
+2024-11-12 09:13:26,761 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-12 09:13:28,105 - INFO - Found 1 results for https://www.gamepix.com/
+2024-11-12 09:13:31,526 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-12 09:13:33,059 - INFO - Rate limit hit for https://www.lofgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:13:44,199 - INFO - Found 6 results for https://www.lofgames.com/
+2024-11-12 09:13:47,942 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-12 09:13:49,485 - INFO - Found 6 results for https://poki.com/
+2024-11-12 09:13:52,787 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-12 09:13:54,127 - INFO - Found 0 results for https://igroutka.ru/
+2024-11-12 09:13:57,088 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-12 09:13:58,645 - INFO - Rate limit hit for https://6games.eu/, waiting 10 seconds before retry 1/3
+2024-11-12 09:14:10,072 - INFO - Rate limit hit for https://6games.eu/, waiting 20 seconds before retry 2/3
+2024-11-12 09:14:31,461 - INFO - Rate limit hit for https://6games.eu/, waiting 40 seconds before retry 3/3
+2024-11-12 09:15:11,467 - INFO - Max retries reached for https://6games.eu/ after 429 status
+2024-11-12 09:15:14,755 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-12 09:15:19,778 - INFO - SSL Error for https://www.hoodamath.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.hoodamath.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-12 09:15:24,242 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-12 09:15:25,711 - INFO - Rate limit hit for https://playhop.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:15:37,090 - INFO - Rate limit hit for https://playhop.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:15:58,496 - INFO - Rate limit hit for https://playhop.com/, waiting 40 seconds before retry 3/3
+2024-11-12 09:16:38,512 - INFO - Max retries reached for https://playhop.com/ after 429 status
+2024-11-12 09:16:42,350 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-12 09:16:43,440 - INFO - Found 0 results for https://1001games.com/
+2024-11-12 09:16:47,626 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-12 09:16:48,669 - INFO - Found 0 results for https://friv.com
+2024-11-12 09:16:51,456 - INFO - Monitoring ======= for 1w timeframe
+2024-11-12 09:16:52,403 - INFO - Found 0 results for =======
+2024-11-12 09:16:54,621 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-12 09:16:56,141 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:17:07,553 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 20 seconds before retry 2/3
+2024-11-12 09:17:28,604 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-11-12 09:17:33,200 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-12 09:17:34,233 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-12 09:17:37,732 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-12 09:17:39,209 - INFO - Rate limit hit for https://4kzgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:17:50,261 - INFO - Found 0 results for https://4kzgame.com/
+2024-11-12 09:17:53,345 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-12 09:17:54,913 - INFO - Rate limit hit for https://www.friv.com/, waiting 10 seconds before retry 1/3
+2024-11-12 09:18:05,954 - INFO - Found 0 results for https://www.friv.com/
+2024-11-12 09:18:08,714 - INFO - Monitoring >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2 for 1w timeframe
+2024-11-12 09:18:09,880 - INFO - Found 0 results for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
+2024-11-12 09:18:13,969 - INFO - Results saved to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv
+2024-11-12 22:51:18,351 - INFO - Successfully loaded CSV with encoding: gbk
+2024-11-12 22:51:18,359 - INFO - Monitoring https://slopeonline.online/ for 1w timeframe
+2024-11-12 22:51:19,894 - INFO - Rate limit hit for https://slopeonline.online/, waiting 10 seconds before retry 1/3
+2024-11-12 22:51:31,304 - INFO - Rate limit hit for https://slopeonline.online/, waiting 20 seconds before retry 2/3
+2024-11-12 22:51:52,407 - INFO - Found 1 results for https://slopeonline.online/
+2024-11-12 22:51:56,202 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-12 22:51:57,444 - INFO - Found 7 results for https://cocrea.world/
+2024-11-12 22:52:00,169 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-12 22:52:01,813 - INFO - Found 40 results for https://www.curseforge.com/
+2024-11-12 22:52:05,950 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-12 22:52:10,977 - INFO - SSL Error for https://www.kongregate.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.kongregate.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-12 22:52:13,197 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-12 22:52:14,536 - INFO - Rate limit hit for https://armorgames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:52:25,615 - INFO - Found 4 results for https://armorgames.com/
+2024-11-12 22:52:29,379 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-12 22:52:30,889 - INFO - Rate limit hit for https://www.addictinggames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:52:42,074 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-12 22:52:44,369 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-12 22:52:45,680 - INFO - Rate limit hit for https://www.crazygames.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:52:57,062 - INFO - Found 4 results for https://www.crazygames.com/
+2024-11-12 22:53:00,704 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-12 22:53:03,601 - INFO - Found 21 results for https://y8.com/
+2024-11-12 22:53:10,964 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-12 22:53:16,117 - INFO - SSL Error for https://www.miniplay.com/: HTTPSConnectionPool(host='www.google.com', port=443): Max retries exceeded with url: /search?q=site%3Ahttps%3A//www.miniplay.com/&tbs=qdr%3Aw&num=100 (Caused by SSLError(SSLEOFError(8, '[SSL: UNEXPECTED_EOF_WHILE_READING] EOF occurred in violation of protocol (_ssl.c:1002)')))
+2024-11-12 22:53:20,812 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-12 22:53:26,497 - INFO - Rate limit hit for https://www.fandom.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:53:37,788 - INFO - Found 6 results for https://www.fandom.com/
+2024-11-12 22:53:40,035 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-12 22:53:42,019 - INFO - Found 20 results for https://www.coolmathgames.com/
+2024-11-12 22:53:45,048 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-12 22:53:46,315 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-12 22:53:48,472 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-12 22:53:49,856 - INFO - Found 8 results for https://gamedistribution.com/
+2024-11-12 22:53:53,413 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-12 22:53:54,880 - INFO - Rate limit hit for https://www.games.dev.env.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:54:06,120 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-12 22:54:11,069 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-12 22:54:12,493 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:54:23,972 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 20 seconds before retry 2/3
+2024-11-12 22:54:45,295 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 40 seconds before retry 3/3
+2024-11-12 22:55:25,307 - INFO - Max retries reached for https://gamemonetize.com/ after 429 status
+2024-11-12 22:55:28,138 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-12 22:55:29,738 - INFO - Rate limit hit for https://funhtml5games.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:55:41,277 - INFO - Rate limit hit for https://funhtml5games.com/, waiting 20 seconds before retry 2/3
+2024-11-12 22:56:02,548 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-12 22:56:06,399 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-12 22:56:07,448 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-12 22:56:09,701 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-12 22:56:11,387 - INFO - Found 44 results for https://playhop.com/
+2024-11-12 22:56:13,553 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-12 22:56:14,921 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:56:26,325 - INFO - Rate limit hit for https://poki.com/, waiting 20 seconds before retry 2/3
+2024-11-12 22:56:47,886 - INFO - Found 20 results for https://poki.com/
+2024-11-12 22:56:52,822 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-12 22:56:54,008 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-11-12 22:56:58,513 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-12 22:57:00,121 - INFO - Found 22 results for https://www.gamepix.com/
+2024-11-12 22:57:04,854 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-12 22:57:06,436 - INFO - Found 32 results for https://gameforge.com/
+2024-11-12 22:57:09,030 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-12 22:57:10,315 - INFO - Rate limit hit for https://mybestgames.dk/, waiting 10 seconds before retry 1/3
+2024-11-12 22:57:21,737 - INFO - Rate limit hit for https://mybestgames.dk/, waiting 20 seconds before retry 2/3
+2024-11-12 22:57:42,930 - INFO - Found 0 results for https://mybestgames.dk/
+2024-11-12 22:57:44,989 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-12 22:57:46,155 - INFO - Found 0 results for https://starfish.games/
+2024-11-12 22:57:50,148 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-12 22:57:51,486 - INFO - Rate limit hit for https://peppagame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:58:02,934 - INFO - Rate limit hit for https://peppagame.com/, waiting 20 seconds before retry 2/3
+2024-11-12 22:58:24,103 - INFO - Found 1 results for https://peppagame.com/
+2024-11-12 22:58:26,835 - INFO - Monitoring <<<<<<< HEAD for 1w timeframe
+2024-11-12 22:58:28,572 - INFO - Found 37 results for <<<<<<< HEAD
+2024-11-12 22:58:31,455 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-12 22:58:32,771 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 10 seconds before retry 1/3
+2024-11-12 22:58:43,861 - INFO - Found 6 results for https://www.twoplayergames.org/
+2024-11-12 22:58:46,717 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-12 22:58:47,942 - INFO - Found 6 results for https://kbhgames.com/
+2024-11-12 22:58:52,037 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-12 22:58:53,230 - INFO - Found 0 results for https://www.gamezhero.com/
+2024-11-12 22:58:55,883 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-12 22:58:57,146 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:59:08,482 - INFO - Found 1 results for https://gamemonetize.com/
+2024-11-12 22:59:11,420 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-12 22:59:12,800 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 10 seconds before retry 1/3
+2024-11-12 22:59:24,456 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 20 seconds before retry 2/3
+2024-11-12 22:59:45,642 - INFO - Found 0 results for https://gamedistribution.com/
+2024-11-12 22:59:49,597 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-12 22:59:50,913 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-12 23:00:02,401 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 20 seconds before retry 2/3
+2024-11-12 23:00:23,826 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 40 seconds before retry 3/3
+2024-11-12 23:01:03,843 - INFO - Max retries reached for https://www.gamepix.com/ after 429 status
+2024-11-12 23:01:06,868 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-12 23:01:08,281 - INFO - Found 4 results for https://www.lofgames.com/
+2024-11-12 23:01:11,453 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-12 23:01:12,730 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-12 23:01:24,514 - INFO - Found 2 results for https://poki.com/
+2024-11-12 23:01:28,357 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-12 23:01:29,767 - INFO - Found 6 results for https://igroutka.ru/
+2024-11-12 23:01:33,590 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-12 23:01:35,019 - INFO - Rate limit hit for https://6games.eu/, waiting 10 seconds before retry 1/3
+2024-11-12 23:01:46,602 - INFO - Rate limit hit for https://6games.eu/, waiting 20 seconds before retry 2/3
+2024-11-12 23:02:07,984 - INFO - Found 18 results for https://6games.eu/
+2024-11-12 23:02:12,355 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-12 23:02:13,614 - INFO - Found 0 results for https://www.hoodamath.com/
+2024-11-12 23:02:16,116 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-12 23:02:17,614 - INFO - Rate limit hit for https://playhop.com/, waiting 10 seconds before retry 1/3
+2024-11-12 23:02:29,228 - INFO - Found 3 results for https://playhop.com/
+2024-11-12 23:02:32,983 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-12 23:02:34,299 - INFO - Found 0 results for https://1001games.com/
+2024-11-12 23:02:37,514 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-12 23:02:39,139 - INFO - Rate limit hit for https://friv.com, waiting 10 seconds before retry 1/3
+2024-11-12 23:02:50,854 - INFO - Rate limit hit for https://friv.com, waiting 20 seconds before retry 2/3
+2024-11-12 23:03:12,352 - INFO - Found 1 results for https://friv.com
+2024-11-12 23:03:16,806 - INFO - Monitoring ======= for 1w timeframe
+2024-11-12 23:03:18,159 - INFO - Found 0 results for =======
+2024-11-12 23:03:21,180 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-12 23:03:23,047 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 23:03:34,325 - INFO - Found 0 results for https://a01.5xlgame.com/
+2024-11-12 23:03:36,465 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-12 23:03:37,653 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-12 23:03:39,902 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-12 23:03:41,323 - INFO - Rate limit hit for https://4kzgame.com/, waiting 10 seconds before retry 1/3
+2024-11-12 23:03:52,826 - INFO - Rate limit hit for https://4kzgame.com/, waiting 20 seconds before retry 2/3
+2024-11-12 23:04:14,043 - INFO - Found 0 results for https://4kzgame.com/
+2024-11-12 23:04:16,209 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-12 23:04:17,442 - INFO - Found 0 results for https://www.friv.com/
+2024-11-12 23:04:21,820 - INFO - Monitoring >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2 for 1w timeframe
+2024-11-12 23:04:23,326 - INFO - Rate limit hit for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2, waiting 10 seconds before retry 1/3
+2024-11-12 23:04:34,612 - INFO - Found 0 results for >>>>>>> a927f5cd95b356db689365a0488b40f68fd915f2
+2024-11-12 23:04:37,240 - INFO - Error saving results: 'gbk' codec can't encode character '\U0001f579' in position 14: illegal multibyte sequence
+2024-11-12 23:04:37,278 - INFO - Results saved with UTF-8-SIG encoding to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv
+2024-11-13 09:00:17,075 - INFO - Successfully loaded CSV with encoding: utf-8-sig
+2024-11-13 09:00:17,090 - INFO - Monitoring https://slopeonline.online/ for 1w timeframe
+2024-11-13 09:00:19,509 - INFO - Found 0 results for https://slopeonline.online/
+2024-11-13 09:00:21,654 - INFO - Monitoring https://cocrea.world/ for 1w timeframe
+2024-11-13 09:00:24,206 - INFO - Rate limit hit for https://cocrea.world/, waiting 10 seconds before retry 1/3
+2024-11-13 09:00:36,885 - INFO - Rate limit hit for https://cocrea.world/, waiting 20 seconds before retry 2/3
+2024-11-13 09:00:59,586 - INFO - Rate limit hit for https://cocrea.world/, waiting 40 seconds before retry 3/3
+2024-11-13 09:01:39,587 - INFO - Max retries reached for https://cocrea.world/ after 429 status
+2024-11-13 09:01:42,040 - INFO - Monitoring https://www.curseforge.com/ for 1w timeframe
+2024-11-13 09:01:45,816 - INFO - Rate limit hit for https://www.curseforge.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:01:58,840 - INFO - Rate limit hit for https://www.curseforge.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:02:21,861 - INFO - Found 25 results for https://www.curseforge.com/
+2024-11-13 09:02:23,971 - INFO - Monitoring https://www.kongregate.com/ for 1w timeframe
+2024-11-13 09:02:26,390 - INFO - Found 20 results for https://www.kongregate.com/
+2024-11-13 09:02:31,121 - INFO - Monitoring https://armorgames.com/ for 1w timeframe
+2024-11-13 09:02:33,780 - INFO - Rate limit hit for https://armorgames.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:02:46,633 - INFO - Rate limit hit for https://armorgames.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:03:09,609 - INFO - Rate limit hit for https://armorgames.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:03:49,621 - INFO - Max retries reached for https://armorgames.com/ after 429 status
+2024-11-13 09:03:52,592 - INFO - Monitoring https://www.addictinggames.com/ for 1w timeframe
+2024-11-13 09:03:55,586 - INFO - Rate limit hit for https://www.addictinggames.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:04:08,744 - INFO - Rate limit hit for https://www.addictinggames.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:04:32,105 - INFO - Found 0 results for https://www.addictinggames.com/
+2024-11-13 09:04:35,750 - INFO - Monitoring https://www.crazygames.com/ for 1w timeframe
+2024-11-13 09:04:38,165 - INFO - Found 0 results for https://www.crazygames.com/
+2024-11-13 09:04:42,832 - INFO - Monitoring https://y8.com/ for 1w timeframe
+2024-11-13 09:04:45,599 - INFO - Rate limit hit for https://y8.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:04:58,474 - INFO - Found 18 results for https://y8.com/
+2024-11-13 09:05:01,059 - INFO - Monitoring https://www.miniplay.com/ for 1w timeframe
+2024-11-13 09:05:03,867 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:05:16,697 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:05:39,744 - INFO - Rate limit hit for https://www.miniplay.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:06:19,755 - INFO - Max retries reached for https://www.miniplay.com/ after 429 status
+2024-11-13 09:06:22,997 - INFO - Monitoring https://www.fandom.com/ for 1w timeframe
+2024-11-13 09:06:25,947 - INFO - Rate limit hit for https://www.fandom.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:06:38,174 - INFO - Found 2 results for https://www.fandom.com/
+2024-11-13 09:06:40,885 - INFO - Monitoring https://www.coolmathgames.com/ for 1w timeframe
+2024-11-13 09:06:43,979 - INFO - Rate limit hit for https://www.coolmathgames.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:06:56,737 - INFO - Rate limit hit for https://www.coolmathgames.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:07:23,193 - INFO - Rate limit hit for https://www.coolmathgames.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:08:03,206 - INFO - Max retries reached for https://www.coolmathgames.com/ after 429 status
+2024-11-13 09:08:06,772 - INFO - Monitoring https://play.dictionary.com/ for 1w timeframe
+2024-11-13 09:08:09,079 - INFO - Found 0 results for https://play.dictionary.com/
+2024-11-13 09:08:12,489 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-13 09:08:15,287 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:08:27,961 - INFO - Rate limit hit for https://gamedistribution.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:08:50,605 - INFO - Found 3 results for https://gamedistribution.com/
+2024-11-13 09:08:55,098 - INFO - Monitoring https://www.games.dev.env.gamepix.com/ for 1w timeframe
+2024-11-13 09:08:57,692 - INFO - Found 0 results for https://www.games.dev.env.gamepix.com/
+2024-11-13 09:09:02,335 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-13 09:09:04,373 - INFO - Found 4 results for https://gamemonetize.com/
+2024-11-13 09:09:07,955 - INFO - Monitoring https://funhtml5games.com/ for 1w timeframe
+2024-11-13 09:09:10,376 - INFO - Found 0 results for https://funhtml5games.com/
+2024-11-13 09:09:14,959 - INFO - Monitoring https://1000webgames.com/ for 1w timeframe
+2024-11-13 09:09:17,396 - INFO - Rate limit hit for https://1000webgames.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:09:30,201 - INFO - Rate limit hit for https://1000webgames.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:09:53,047 - INFO - Found 0 results for https://1000webgames.com/
+2024-11-13 09:09:57,848 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-13 09:10:00,670 - INFO - Rate limit hit for https://playhop.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:10:13,516 - INFO - Found 41 results for https://playhop.com/
+2024-11-13 09:10:15,791 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-13 09:10:18,514 - INFO - Rate limit hit for https://poki.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:10:31,120 - INFO - Found 15 results for https://poki.com/
+2024-11-13 09:10:35,063 - INFO - Monitoring https://www.ufreegames.com/ for 1w timeframe
+2024-11-13 09:10:38,157 - INFO - Rate limit hit for https://www.ufreegames.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:10:51,381 - INFO - Rate limit hit for https://www.ufreegames.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:11:13,501 - INFO - Found 0 results for https://www.ufreegames.com/
+2024-11-13 09:11:16,252 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-13 09:11:19,143 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:11:32,019 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:11:54,763 - INFO - Rate limit hit for https://www.gamepix.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:12:34,774 - INFO - Max retries reached for https://www.gamepix.com/ after 429 status
+2024-11-13 09:12:37,090 - INFO - Monitoring https://gameforge.com/ for 1w timeframe
+2024-11-13 09:12:40,175 - INFO - Rate limit hit for https://gameforge.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:12:53,238 - INFO - Rate limit hit for https://gameforge.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:13:16,467 - INFO - Rate limit hit for https://gameforge.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:13:56,478 - INFO - Max retries reached for https://gameforge.com/ after 429 status
+2024-11-13 09:13:58,932 - INFO - Monitoring https://mybestgames.dk/ for 1w timeframe
+2024-11-13 09:14:02,273 - INFO - Found 0 results for https://mybestgames.dk/
+2024-11-13 09:14:06,835 - INFO - Monitoring https://starfish.games/ for 1w timeframe
+2024-11-13 09:14:09,431 - INFO - Rate limit hit for https://starfish.games/, waiting 10 seconds before retry 1/3
+2024-11-13 09:14:22,279 - INFO - Rate limit hit for https://starfish.games/, waiting 20 seconds before retry 2/3
+2024-11-13 09:14:44,750 - INFO - Found 0 results for https://starfish.games/
+2024-11-13 09:14:48,450 - INFO - Monitoring https://peppagame.com/ for 1w timeframe
+2024-11-13 09:14:51,180 - INFO - Rate limit hit for https://peppagame.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:15:03,534 - INFO - Found 0 results for https://peppagame.com/
+2024-11-13 09:15:06,246 - INFO - Monitoring https://www.twoplayergames.org/ for 1w timeframe
+2024-11-13 09:15:09,266 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 10 seconds before retry 1/3
+2024-11-13 09:15:22,264 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 20 seconds before retry 2/3
+2024-11-13 09:15:45,035 - INFO - Rate limit hit for https://www.twoplayergames.org/, waiting 40 seconds before retry 3/3
+2024-11-13 09:16:25,048 - INFO - Max retries reached for https://www.twoplayergames.org/ after 429 status
+2024-11-13 09:16:29,453 - INFO - Monitoring https://kbhgames.com/ for 1w timeframe
+2024-11-13 09:16:31,601 - INFO - Found 0 results for https://kbhgames.com/
+2024-11-13 09:16:34,083 - INFO - Monitoring https://www.gamezhero.com/ for 1w timeframe
+2024-11-13 09:16:36,552 - INFO - Found 0 results for https://www.gamezhero.com/
+2024-11-13 09:16:40,778 - INFO - Monitoring https://gamemonetize.com/ for 1w timeframe
+2024-11-13 09:16:43,387 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:16:56,982 - INFO - Rate limit hit for https://gamemonetize.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:17:19,671 - INFO - Found 0 results for https://gamemonetize.com/
+2024-11-13 09:17:23,645 - INFO - Monitoring https://gamedistribution.com/ for 1w timeframe
+2024-11-13 09:17:26,181 - INFO - Found 0 results for https://gamedistribution.com/
+2024-11-13 09:17:29,482 - INFO - Monitoring https://www.gamepix.com/ for 1w timeframe
+2024-11-13 09:17:32,176 - INFO - Found 37 results for https://www.gamepix.com/
+2024-11-13 09:17:34,480 - INFO - Monitoring https://www.lofgames.com/ for 1w timeframe
+2024-11-13 09:17:36,844 - INFO - Found 0 results for https://www.lofgames.com/
+2024-11-13 09:17:40,244 - INFO - Monitoring https://poki.com/ for 1w timeframe
+2024-11-13 09:17:43,014 - INFO - Found 1 results for https://poki.com/
+2024-11-13 09:17:47,113 - INFO - Monitoring https://igroutka.ru/ for 1w timeframe
+2024-11-13 09:17:50,140 - INFO - Rate limit hit for https://igroutka.ru/, waiting 10 seconds before retry 1/3
+2024-11-13 09:18:02,643 - INFO - Rate limit hit for https://igroutka.ru/, waiting 20 seconds before retry 2/3
+2024-11-13 09:18:25,160 - INFO - Found 9 results for https://igroutka.ru/
+2024-11-13 09:18:27,408 - INFO - Monitoring https://6games.eu/ for 1w timeframe
+2024-11-13 09:18:29,987 - INFO - Found 1 results for https://6games.eu/
+2024-11-13 09:18:34,581 - INFO - Monitoring https://www.hoodamath.com/ for 1w timeframe
+2024-11-13 09:18:37,415 - INFO - Rate limit hit for https://www.hoodamath.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:18:49,827 - INFO - Found 1 results for https://www.hoodamath.com/
+2024-11-13 09:18:54,092 - INFO - Monitoring https://playhop.com/ for 1w timeframe
+2024-11-13 09:18:56,876 - INFO - Found 0 results for https://playhop.com/
+2024-11-13 09:19:01,299 - INFO - Monitoring https://1001games.com/ for 1w timeframe
+2024-11-13 09:19:04,068 - INFO - Rate limit hit for https://1001games.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:19:16,934 - INFO - Rate limit hit for https://1001games.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:19:39,191 - INFO - Rate limit hit for https://1001games.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:20:19,201 - INFO - Max retries reached for https://1001games.com/ after 429 status
+2024-11-13 09:20:21,236 - INFO - Monitoring https://friv.com for 1w timeframe
+2024-11-13 09:20:24,098 - INFO - Rate limit hit for https://friv.com, waiting 10 seconds before retry 1/3
+2024-11-13 09:20:36,419 - INFO - Found 0 results for https://friv.com
+2024-11-13 09:20:41,086 - INFO - Monitoring https://a01.5xlgame.com/ for 1w timeframe
+2024-11-13 09:20:45,011 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:20:57,963 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 20 seconds before retry 2/3
+2024-11-13 09:21:20,578 - INFO - Rate limit hit for https://a01.5xlgame.com/, waiting 40 seconds before retry 3/3
+2024-11-13 09:22:00,590 - INFO - Max retries reached for https://a01.5xlgame.com/ after 429 status
+2024-11-13 09:22:03,118 - INFO - Monitoring https://5xlgame.com/ for 1w timeframe
+2024-11-13 09:22:05,752 - INFO - Found 0 results for https://5xlgame.com/
+2024-11-13 09:22:09,986 - INFO - Monitoring https://4kzgame.com/ for 1w timeframe
+2024-11-13 09:22:12,744 - INFO - Rate limit hit for https://4kzgame.com/, waiting 10 seconds before retry 1/3
+2024-11-13 09:22:25,137 - INFO - Found 0 results for https://4kzgame.com/
+2024-11-13 09:22:29,333 - INFO - Monitoring https://www.friv.com/ for 1w timeframe
+2024-11-13 09:22:32,027 - INFO - Found 0 results for https://www.friv.com/
+2024-11-13 09:22:35,926 - INFO - Results saved to E:/MakeDollor/seo-util/SEO_util/minitor_floder/game_monitor_results_20241029_2258441.csv
