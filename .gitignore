@@ -27,6 +27,8 @@ Thumbs.db
 
 # CSV 文件
 *.csv
+*.xlsx
 **/*.csv
 minitor_floder/*.csv
+minitor_floder/*.xlsx
 minitor_floder/*.log
