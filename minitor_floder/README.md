@@ -35,7 +35,7 @@ game.163.com
 
 运行程序：
 ```bash
-python game_monitor.py
+python main.py
 ```
 
 ### 3. 配置监控选项
