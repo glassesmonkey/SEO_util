@@ -15,6 +15,8 @@ import json
 import schedule
 import threading
 import sys
+from openpyxl import load_workbook
+import xlrd
 
 class Config:
     def __init__(self, config_file="config.json"):
@@ -58,10 +60,12 @@ class ScheduleManager:
         self.running = False
         self.thread = None
         self.interval_hours = 0
+        self.first_run = True
 
-    def start(self, interval_hours):
+    def start(self, interval_hours, run_immediately=False):
         """启动定时任务
         :param interval_hours: 间隔小时数
+        :param run_immediately: 是否立即执行一次
         """
         if self.running:
             return
@@ -70,9 +74,11 @@ class ScheduleManager:
         self.interval_hours = interval_hours
         schedule.clear()
         
-        # 立即执行一次
-        self.callback()
-        # 然后每隔指定小时数执行
+        # 只有在指定立即执行时才立即运行
+        if run_immediately:
+            self.callback()
+            
+        # 设置定时任务
         schedule.every(interval_hours).hours.do(self.callback)
         
         self.thread = threading.Thread(target=self._run_schedule, daemon=True)
@@ -313,7 +319,8 @@ class GameMonitorGUI:
                 interval = float(self.schedule_interval.get())
                 if interval <= 0:
                     raise ValueError("间隔时间必须大于0")
-                self.schedule_manager.start(interval)
+                # 启动定时任务，但不立即执行
+                self.schedule_manager.start(interval, run_immediately=False)
                 self.update_countdown()
             except ValueError as e:
                 messagebox.showerror("错误", "请输入有效的小时数!")
@@ -336,10 +343,15 @@ class GameMonitorGUI:
             self.save_current_config()
 
     def browse_csv_file(self):
-        """浏览CSV文件"""
+        """浏览数据文件"""
         filename = filedialog.askopenfilename(
-            title="选择CSV文件",
-            filetypes=[("CSV files", "*.csv"), ("All files", "*.*")],
+            title="选择数据文件",
+            filetypes=[
+                ("所有支持的格式", "*.csv;*.xlsx;*.xls"),
+                ("CSV files", "*.csv"),
+                ("Excel files", "*.xlsx;*.xls"),
+                ("All files", "*.*")
+            ],
             initialdir=os.path.dirname(self.csv_path.get()) if self.csv_path.get() else os.getcwd()
         )
         if filename:
@@ -390,6 +402,10 @@ class GameMonitorGUI:
         
         # 清空结果显示
         self.result_text.delete(1.0, tk.END)
+        
+        # 如果启用了定时任务，将首次运行标志设为True
+        if self.scheduler_enabled.get():
+            self.schedule_manager.first_run = True
         
         # 在新线程中运行监控
         Thread(target=self.run_monitor, daemon=True).start()
@@ -488,21 +504,46 @@ class GameSiteMonitor:
             self._load_existing_urls()
 
     def _load_existing_urls(self):
-        """加载现有CSV文件中的URL"""
-        encodings = ['utf-8-sig', 'utf-8', 'gbk', 'gb2312', 'gb18030']
+        """加载现有数据文件中的URL"""
+        file_extension = os.path.splitext(self.existing_csv)[1].lower()
         
-        for encoding in encodings:
-            try:
-                self.existing_df = pd.read_csv(self.existing_csv, encoding=encoding)
+        try:
+            if file_extension == '.csv':
+                # 处理CSV文件
+                encodings = ['utf-8-sig', 'utf-8', 'gbk', 'gb2312', 'gb18030']
+                for encoding in encodings:
+                    try:
+                        self.existing_df = pd.read_csv(self.existing_csv, encoding=encoding)
+                        if 'url' in self.existing_df.columns:
+                            self.existing_urls = set(self.existing_df['url'].tolist())
+                            self.log_message(f"Successfully loaded CSV with encoding: {encoding}")
+                            self.file_encoding = encoding
+                            return
+                    except Exception:
+                        continue
+                    
+            elif file_extension == '.xlsx':
+                # 处理XLSX文件
+                self.existing_df = pd.read_excel(self.existing_csv, engine='openpyxl')
                 if 'url' in self.existing_df.columns:
                     self.existing_urls = set(self.existing_df['url'].tolist())
-                    self.log_message(f"Successfully loaded CSV with encoding: {encoding}")
-                    self.file_encoding = encoding
+                    self.log_message("Successfully loaded XLSX file")
+                    self.file_extension = '.xlsx'
                     return
-            except Exception as e:
-                continue
-        
-        self.log_message("Failed to load CSV with any known encoding")
+                    
+            elif file_extension == '.xls':
+                # 处理XLS文件
+                self.existing_df = pd.read_excel(self.existing_csv, engine='xlrd')
+                if 'url' in self.existing_df.columns:
+                    self.existing_urls = set(self.existing_df['url'].tolist())
+                    self.log_message("Successfully loaded XLS file")
+                    self.file_extension = '.xls'
+                    return
+                    
+            self.log_message("Failed to load file or 'url' column not found")
+            
+        except Exception as e:
+            self.log_message(f"Error loading file: {str(e)}")
 
     def setup_logging(self):
         """设置日志"""
@@ -528,9 +569,12 @@ class GameSiteMonitor:
 
     def log_message(self, message):
         """统一的日志记录函数"""
+        current_time = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
+        formatted_message = f"[{current_time}] {message}"
+        
         if self.logger_callback:
-            self.logger_callback(message)
-        self.logger.info(message)
+            self.logger_callback(formatted_message)
+        self.logger.info(message)  # logger已经包含时间戳，所以这里使用原始消息
 
     def build_google_search_url(self, site, time_range):
         """构建Google搜索URL"""
@@ -659,20 +703,23 @@ class GameSiteMonitor:
             time_ranges = ['24h', '1w']
             
         all_results = []
+        duplicate_count = 0  # 添加去重计数器
         
         for site in self.sites:
             for time_range in time_ranges:
                 results = self.monitor_site(site, time_range)
                 new_results = []
                 for result in results:
-                    if result.get('url') not in self.existing_urls:
-                        result.update({
-                            'site': site,
-                            'time_range': time_range,
-                            'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
-                        })
-                        new_results.append(result)
-                        self.existing_urls.add(result.get('url'))
+                    if result.get('url') in self.existing_urls:
+                        duplicate_count += 1  # 统计重复数量
+                        continue
+                    result.update({
+                        'site': site,
+                        'time_range': time_range,
+                        'timestamp': datetime.now().strftime('%Y-%m-%d %H:%M:%S')
+                    })
+                    new_results.append(result)
+                    self.existing_urls.add(result.get('url'))
                 
                 all_results.extend(new_results)
                 time.sleep(random.uniform(2, 5))
@@ -682,39 +729,63 @@ class GameSiteMonitor:
             
             try:
                 if self.existing_df is not None:
+                    original_len = len(self.existing_df)
                     df = pd.concat([self.existing_df, new_df], ignore_index=True)
+                    before_dedup = len(df)
                     df = df.drop_duplicates(subset=['url'], keep='last')
+                    after_dedup = len(df)
+                    dedup_count = before_dedup - after_dedup
+                    
+                    # 记录去重信息
+                    self.log_message(f"\n=== 去重统计 ===")
+                    self.log_message(f"原有记录数: {original_len}")
+                    self.log_message(f"新增记录数: {len(new_df)}")
+                    self.log_message(f"重复URL数: {duplicate_count}")
+                    if dedup_count > 0:
+                        self.log_message(f"数据合并时去重数: {dedup_count}")
+                    self.log_message(f"最终记录数: {after_dedup}")
                 else:
                     df = new_df
                 
-                if hasattr(self, 'file_encoding'):
-                    encoding = self.file_encoding
-                else:
-                    encoding = 'gbk'
-                
                 if self.last_output_file:
                     output_file = self.last_output_file
+                    file_extension = os.path.splitext(output_file)[1].lower()
                 else:
-                    output_file = f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
+                    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+                    output_file = f'game_monitor_results_{timestamp}.csv'
+                    file_extension = '.csv'
                 
-                df.to_csv(output_file, index=False, encoding=encoding)
-                self.log_message(f"Results saved to {output_file}")
-                self.existing_df = df
-                return df
-                
-            except Exception as e:
-                self.log_message(f"Error saving results: {str(e)}")
                 try:
-                    output_file = self.last_output_file or f'game_monitor_results_{datetime.now().strftime("%Y%m%d_%H%M%S")}.csv'
-                    df.to_csv(output_file, index=False, encoding='utf-8-sig')
-                    self.log_message(f"Results saved with UTF-8-SIG encoding to {output_file}")
+                    if file_extension == '.csv':
+                        encoding = getattr(self, 'file_encoding', 'gbk')
+                        df.to_csv(output_file, index=False, encoding=encoding)
+                    elif file_extension == '.xlsx':
+                        df.to_excel(output_file, index=False, engine='openpyxl')
+                    elif file_extension == '.xls':
+                        df.to_excel(output_file, index=False, engine='xlwt')
+                    
+                    self.log_message(f"\n结果已保存至: {output_file}")
                     self.existing_df = df
                     return df
-                except Exception as e2:
-                    self.log_message(f"Failed to save results with alternative encoding: {str(e2)}")
+                    
+                except Exception as e:
+                    self.log_message(f"Error saving results: {str(e)}")
+                    backup_file = f'game_monitor_results_{timestamp}_backup.csv'
+                    df.to_csv(backup_file, index=False, encoding='utf-8-sig')
+                    self.log_message(f"Results saved with UTF-8-SIG encoding to {backup_file}")
+                    self.existing_df = df
                     return df
+                    
+            except Exception as e:
+                self.log_message(f"Failed to save results: {str(e)}")
+                return df
         else:
-            self.log_message("No results found")
+            if duplicate_count > 0:  # 如果有重复项但没有新结果
+                self.log_message("\n=== 去重统计 ===")
+                self.log_message(f"发现重复URL数: {duplicate_count}")
+                self.log_message("未发现新的结果")
+            else:
+                self.log_message("未找到任何结果")
             return pd.DataFrame()
 
 def main():

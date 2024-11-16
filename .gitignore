@@ -32,3 +32,4 @@ Thumbs.db
 minitor_floder/*.csv
 minitor_floder/*.xlsx
 minitor_floder/*.log
+*.txt
