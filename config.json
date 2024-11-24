@@ -8,5 +8,5 @@
     "scheduler_enabled": true,
     "schedule_time": "09:00",
     "use_existing_csv": true,
-    "schedule_interval": "12"
+    "schedule_interval": "8"
 }

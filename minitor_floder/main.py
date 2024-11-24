@@ -472,16 +472,10 @@ class GameSiteMonitor:
     def __init__(self, sites_file="game_sites.txt", proxy_host=None, proxy_port=None, logger_callback=None, existing_csv=None):
         """
         初始化监控器
-        :param sites_file: 网站列表文件
-        :param proxy_host: 代理主机
-        :param proxy_port: 代理端口
-        :param logger_callback: 日志回调数
-        :param existing_csv: 现有的CSV文件路径
         """
-        # 首先设置logger
         self.setup_logging()
         
-        self.sites = self._load_sites(sites_file)
+        self.sites_file = sites_file  # 保存文件路径而不是直接读取内容
         self.headers = {
             'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36'
         }
@@ -557,13 +551,15 @@ class GameSiteMonitor:
         )
         self.logger = logging
 
-    def _load_sites(self, filename):
+    def _load_sites(self):
         """加载网站列表"""
         try:
-            with open(filename, 'r', encoding='utf-8') as f:
-                return [line.strip() for line in f if line.strip()]
+            with open(self.sites_file, 'r', encoding='utf-8') as f:
+                sites = [line.strip() for line in f if line.strip()]
+            self.log_message(f"成功加载网站列表，共 {len(sites)} 个网站")
+            return sites
         except FileNotFoundError:
-            raise Exception(f"Sites file {filename} not found!")
+            raise Exception(f"Sites file {self.sites_file} not found!")
         except Exception as e:
             raise Exception(f"Error loading sites file: {str(e)}")
 
@@ -702,17 +698,32 @@ class GameSiteMonitor:
         if time_ranges is None:
             time_ranges = ['24h', '1w']
             
+        # 每次执行监控任务时重新读取网站列表
+        sites = self._load_sites()
         all_results = []
-        duplicate_count = 0  # 添加去重计数器
+        duplicate_url_count = 0
+        duplicate_title_count = 0
         
-        for site in self.sites:
+        # 如果存在现有数据，创建title集合用于去重
+        existing_titles = set()
+        if self.existing_df is not None and 'title' in self.existing_df.columns:
+            existing_titles = set(self.existing_df['title'].tolist())
+        
+        for site in sites:
             for time_range in time_ranges:
                 results = self.monitor_site(site, time_range)
                 new_results = []
                 for result in results:
+                    # URL去重检查
                     if result.get('url') in self.existing_urls:
-                        duplicate_count += 1  # 统计重复数量
+                        duplicate_url_count += 1
                         continue
+                    
+                    # Title去重检查
+                    if result.get('title') in existing_titles:
+                        duplicate_title_count += 1
+                        continue
+                    
                     result.update({
                         'site': site,
                         'time_range': time_range,
@@ -720,6 +731,7 @@ class GameSiteMonitor:
                     })
                     new_results.append(result)
                     self.existing_urls.add(result.get('url'))
+                    existing_titles.add(result.get('title'))
                 
                 all_results.extend(new_results)
                 time.sleep(random.uniform(2, 5))
@@ -732,21 +744,44 @@ class GameSiteMonitor:
                     original_len = len(self.existing_df)
                     df = pd.concat([self.existing_df, new_df], ignore_index=True)
                     before_dedup = len(df)
+                    
+                    # 先基于URL去重
                     df = df.drop_duplicates(subset=['url'], keep='last')
-                    after_dedup = len(df)
-                    dedup_count = before_dedup - after_dedup
+                    after_url_dedup = len(df)
+                    url_dedup_count = before_dedup - after_url_dedup
+                    
+                    # 再基于title去重
+                    df = df.drop_duplicates(subset=['title'], keep='last')
+                    after_title_dedup = len(df)
+                    title_dedup_count = after_url_dedup - after_title_dedup
                     
                     # 记录去重信息
                     self.log_message(f"\n=== 去重统计 ===")
                     self.log_message(f"原有记录数: {original_len}")
                     self.log_message(f"新增记录数: {len(new_df)}")
-                    self.log_message(f"重复URL数: {duplicate_count}")
-                    if dedup_count > 0:
-                        self.log_message(f"数据合并时去重数: {dedup_count}")
-                    self.log_message(f"最终记录数: {after_dedup}")
+                    self.log_message(f"URL重复数: {duplicate_url_count}")
+                    self.log_message(f"标题重复数: {duplicate_title_count}")
+                    if url_dedup_count > 0:
+                        self.log_message(f"数据合并时URL去重数: {url_dedup_count}")
+                    if title_dedup_count > 0:
+                        self.log_message(f"数据合并时标题去重数: {title_dedup_count}")
+                    self.log_message(f"最终记录数: {after_title_dedup}")
                 else:
                     df = new_df
+                    # 对新数据同时进行URL和标题去重
+                    original_len = len(df)
+                    df = df.drop_duplicates(subset=['url'], keep='last')
+                    after_url_dedup = len(df)
+                    df = df.drop_duplicates(subset=['title'], keep='last')
+                    after_title_dedup = len(df)
+                    
+                    if original_len != after_title_dedup:
+                        self.log_message(f"\n=== 去重统计 ===")
+                        self.log_message(f"原始记录数: {original_len}")
+                        self.log_message(f"URL去重后: {after_url_dedup}")
+                        self.log_message(f"标题去重后: {after_title_dedup}")
                 
+                # 保存文件的代码保持不变...
                 if self.last_output_file:
                     output_file = self.last_output_file
                     file_extension = os.path.splitext(output_file)[1].lower()
@@ -780,9 +815,12 @@ class GameSiteMonitor:
                 self.log_message(f"Failed to save results: {str(e)}")
                 return df
         else:
-            if duplicate_count > 0:  # 如果有重复项但没有新结果
+            if duplicate_url_count > 0 or duplicate_title_count > 0:
                 self.log_message("\n=== 去重统计 ===")
-                self.log_message(f"发现重复URL数: {duplicate_count}")
+                if duplicate_url_count > 0:
+                    self.log_message(f"发现URL重复数: {duplicate_url_count}")
+                if duplicate_title_count > 0:
+                    self.log_message(f"发现标题重复数: {duplicate_title_count}")
                 self.log_message("未发现新的结果")
             else:
                 self.log_message("未找到任何结果")
