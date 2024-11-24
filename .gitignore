@@ -16,6 +16,7 @@ venv/
 env/
 ENV/
 *.log
+
 # Python 编译文件
 __pycache__/
 *.py[cod]
@@ -25,11 +26,14 @@ __pycache__/
 .DS_Store
 Thumbs.db 
 
-# CSV 文件
+# CSV 和 Excel 文件
 *.csv
 *.xlsx
 **/*.csv
 minitor_floder/*.csv
 minitor_floder/*.xlsx
 minitor_floder/*.log
-*.txt
+
+# 特定文本文件
+game_sites.txt
+minitor_floder/game_sites.txt
